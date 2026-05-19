@@ -1,0 +1,3061 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Medmelo Study Abroad</title>
+    <meta name="author" content="Medmelo Study Abroad">
+    <meta name="description" content="Medmelo Study Abroad - Medical Admissions ">
+    <meta name="keywords" content="Medmelo Study Abroad ">
+    <meta name="robots" content="INDEX,FOLLOW">
+
+    <!-- Mobile Specific Metas -->
+    <!-- Default viewport -->
+    <meta name="viewport" content="width=900, initial-scale=0.5, user-scalable=yes" id="viewport">
+
+    <script>
+        (function () {
+            const viewport = document.getElementById('viewport');
+            const userAgent = navigator.userAgent.toLowerCase();
+            const screenWidth = screen.width;
+            const screenHeight = screen.height;
+            const pixelRatio = window.devicePixelRatio || 1;
+
+            // Calculate actual dimensions
+            const actualWidth = screenWidth * pixelRatio;
+            const actualHeight = screenHeight * pixelRatio;
+
+            if (/ipad/.test(userAgent)) {
+                // 13-inch iPad Pro (2732 x 2048 or 2048 x 2732)
+                if (actualWidth >= 2732 || actualHeight >= 2732) {
+                    viewport.setAttribute('content', 'width=900, initial-scale=5, user-scalable=yes');
+                }
+                // 12.9-inch iPad Pro (2732 x 2048)
+                else if (actualWidth >= 2048 && actualHeight >= 2732) {
+                    viewport.setAttribute('content', 'width=900, initial-scale=5, user-scalable=yes');
+                }
+                // 11-inch iPad Pro (2388 x 1668)
+                else if (actualWidth >= 1668 && actualHeight >= 2388) {
+                    viewport.setAttribute('content', 'width=900, initial-scale=0.5, user-scalable=yes');
+                }
+                // Regular iPad (2160 x 1620 or older)
+                else {
+                    viewport.setAttribute('content', 'width=900, initial-scale=0.5, user-scalable=yes');
+                }
+            } else if (screenWidth >= 768 && screenWidth <= 1024) {
+                // Other tablets
+                viewport.setAttribute('content', 'width=900, initial-scale=0.5, user-scalable=yes');
+            } else if (screenWidth < 768) {
+                // Mobile
+                viewport.setAttribute('content', 'width=900, initial-scale=0.3, user-scalable=yes');
+            }
+            // Desktop keeps original 0.5
+        })();
+    </script>
+    <!-- Favicons - Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+
+
+    <style>
+        /* Enhanced Video Container - Fixed for mobile */
+        .video-wrapper {
+            margin-top: 60px;
+            position: relative;
+        }
+
+        .video-box {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16/9;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            backdrop-filter: blur(20px);
+        }
+
+        .video-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg,
+                    rgba(74, 144, 226, 0.1) 0%,
+                    rgba(80, 201, 195, 0.1) 50%,
+                    rgba(255, 255, 255, 0.1) 100%);
+            z-index: 1;
+            border-radius: 22px;
+        }
+
+        .video-box:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 40px 80px rgba(0, 0, 0, 0.25);
+            border-color: rgba(80, 201, 195, 0.6);
+        }
+
+        .video-box iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 22px;
+            z-index: 2;
+        }
+
+        /* Decorative Elements */
+        .video-decoration {
+            position: absolute;
+            z-index: 0;
+        }
+
+        .decoration-1 {
+            top: -30px;
+            left: -30px;
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, rgba(80, 201, 195, 0.3), rgba(74, 144, 226, 0.3));
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .decoration-2 {
+            top: -20px;
+            right: -40px;
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(80, 201, 195, 0.2));
+            border-radius: 50%;
+            animation: float 8s ease-in-out infinite reverse;
+        }
+
+        .decoration-3 {
+            bottom: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, rgba(74, 144, 226, 0.2), rgba(255, 255, 255, 0.1));
+            border-radius: 50%;
+            animation: float 7s ease-in-out infinite;
+        }
+
+        /* Animations */
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px) rotate(0deg);
+                opacity: 0.7;
+            }
+
+            50% {
+                transform: translateY(-30px) rotate(180deg);
+                opacity: 1;
+            }
+        }
+
+        /* Responsive Design - Fixed mobile issues */
+        @media (max-width: 768px) {
+            .video-box {
+                border-radius: 20px;
+            }
+
+            .video-box::before {
+                border-radius: 18px;
+            }
+
+            .video-box iframe {
+                border-radius: 18px;
+            }
+
+            .video-wrapper {
+                margin-top: 30px;
+                margin-bottom: 0;
+            }
+
+            /* Hide decorative elements on mobile for cleaner look */
+            .decoration-1,
+            .decoration-2,
+            .decoration-3 {
+                display: none;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .video-wrapper {
+                margin-top: 20px;
+                margin-bottom: 0;
+            }
+
+            .video-box {
+                border-radius: 15px;
+                border-width: 2px;
+                margin-bottom: 0;
+            }
+
+            .video-box::before {
+                border-radius: 13px;
+            }
+
+            .video-box iframe {
+                border-radius: 13px;
+            }
+        }
+
+
+
+        .whatsapp-ad {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .whatsapp-button {
+            background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 18px 35px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            margin: 20px auto;
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+        }
+
+        .whatsapp-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(37, 211, 102, 0.4);
+            background: linear-gradient(135deg, #20b954 0%, #0f7a6e 100%);
+        }
+
+        .whatsapp-icon {
+            width: 28px;
+            height: 28px;
+            fill: currentColor;
+        }
+
+        .headline {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .subtext {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+            }
+
+            50% {
+                box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
+            }
+
+            100% {
+                box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .whatsapp-ad {
+                padding: 30px 20px;
+                margin: 20px;
+            }
+
+            .headline {
+                font-size: 24px;
+            }
+
+            .whatsapp-button {
+                padding: 15px 25px;
+                font-size: 16px;
+            }
+        }
+
+
+        /* Reset for this header only */
+        .site-header * {
+            box-sizing: border-box;
+        }
+
+        .site-header {
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            width: 100%;
+        }
+
+        .header-wrapper {
+            position: relative;
+            width: 100%;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 20px;
+            width: 100%;
+            position: relative;
+            z-index: 10;
+        }
+
+        .logo-section {
+            flex: 0 0 auto;
+        }
+
+        .logo-section a {
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .logo-section img {
+            max-height: 90px;
+            width: auto;
+            display: block;
+        }
+
+        .cta-section {
+            flex: 0 0 auto;
+        }
+
+
+        .loader-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+            height: 100%;
+        }
+
+        .loader-container img {
+            width: 400px;
+            height: auto;
+            margin-bottom: 520px;
+            /* adjust as needed */
+
+            max-width: 80vw;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .loader-container img {
+                width: 250px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .loader-container img {
+                width: 250px;
+            }
+        }
+    </style>
+
+    <!--==============================
+      Google Fonts
+    ============================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@200..800&family=Montez&display=swap"
+        rel="stylesheet">
+
+    <!--==============================
+        All CSS File
+    ============================== -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Fontawesome Icon -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+
+    <!-- Swiper css -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+
+    <!--********************************
+        Code Start From Here 
+    ******************************** -->
+
+    <div class="cursor-follower"></div>
+
+    <!-- slider drag cursor -->
+    <div class="slider-drag-cursor"><i class="fas fa-angle-left me-2"></i> DRAG <i class="fas fa-angle-right ms-2"></i>
+    </div>
+
+
+    <!--==============================
+     Preloader
+  ==============================-->
+    <div id="preloader" class="preloader ">
+        <!--<button class="th-btn preloaderCls">Cancel Preloader </button>-->
+        <div class="loader-container">
+            <img src="assets/img/empire.png" alt="">
+        </div>
+
+        <div id="loader" class="th-preloader">
+            <div class="animation-preloader">
+                <div class="txt-loading">
+                    <span preloader-text="M" class="characters">M</span>
+
+                    <span preloader-text="E" class="characters">E </span>
+
+                    <span preloader-text="D" class="characters">D </span>
+
+                    <span preloader-text="M" class="characters">M </span>
+
+                    <span preloader-text="E" class="characters">E </span>
+                    <span preloader-text="L" class="characters">L </span>
+                    <span preloader-text="O" class="characters">O </span>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--==============================
+    Sidemenu
+============================== -->
+    <div class="sidemenu-wrapper sidemenu-info ">
+        <div class="sidemenu-content">
+            <button class="closeButton sideMenuCls"><i class="far fa-times"></i></button>
+            <div class="widget  ">
+                <div class="th-widget-about">
+                    <div class="about-logo">
+                        <a href="index.html"><img src="assets/img/logo2.svg" alt="Tourm"></a>
+                    </div>
+                    <p class="about-text">Rapidiously myocardinate cross-platform intellectual capital model.
+                        Appropriately create interactive infrastructures</p>
+                    <div class="th-social">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="widget  ">
+                <h3 class="widget_title">Recent Posts</h3>
+                <div class="recent-post-wrap">
+                    <div class="recent-post">
+                        <div class="media-img">
+                            <a href="blog-details.html"><img src="assets/img/blog/recent-post-1-1.jpg"
+                                    alt="Blog Image"></a>
+                        </div>
+                        <div class="media-body">
+                            <div class="recent-post-meta">
+                                <a href="blog.html"><i class="far fa-calendar"></i>24 Jun , 2025</a>
+                            </div>
+                            <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Where Vision Meets
+                                    Concrete
+                                    Reality</a></h4>
+                        </div>
+                    </div>
+                    <div class="recent-post">
+                        <div class="media-img">
+                            <a href="blog-details.html"><img src="assets/img/blog/recent-post-1-2.jpg"
+                                    alt="Blog Image"></a>
+                        </div>
+                        <div class="media-body">
+                            <div class="recent-post-meta">
+                                <a href="blog.html"><i class="far fa-calendar"></i>22 Jun , 2025</a>
+                            </div>
+                            <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Raising the Bar in
+                                    Construction.</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="widget  ">
+                <h3 class="widget_title">Get In Touch</h3>
+                <div class="th-widget-contact">
+                    <div class="info-box_text">
+                        <div class="icon">
+                            <img src="assets/img/icon/phone.svg" alt="img">
+                        </div>
+                        <div class="details">
+                            <p><a href="tel:+01234567890" class="info-box_link">+01 234 567 890</a></p>
+                            <p><a href="tel:+09876543210" class="info-box_link">+09 876 543 210</a></p>
+                        </div>
+                    </div>
+                    <div class="info-box_text">
+                        <div class="icon">
+                            <img src="assets/img/icon/envelope.svg" alt="img">
+                        </div>
+                        <div class="details">
+                            <p><a href="mailto:mailinfo00@tourm.com" class="info-box_link">mailinfo00@tourm.com</a></p>
+                            <p><a href="mailto:support24@tourm.com" class="info-box_link">support24@tourm.com</a></p>
+                        </div>
+                    </div>
+                    <div class="info-box_text">
+                        <div class="icon"><img src="assets/img/icon/location-dot.svg" alt="img"></div>
+                        <div class="details">
+                            <p>789 Inner Lane, Holy park, California, USA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-search-box">
+        <button class="searchClose"><i class="fal fa-times"></i></button>
+        <form action="#">
+            <input type="text" placeholder="What are you looking for?">
+            <button type="submit"><i class="fal fa-search"></i></button>
+        </form>
+    </div><!--==============================
+    Mobile Menu
+  ============================== -->
+    <div class="th-menu-wrapper onepage-nav">
+        <div class="th-menu-area text-center">
+            <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
+            <div class="mobile-logo">
+                <a href="index.html"><img src="assets/img/logo1.png" alt="Tourm"></a>
+            </div>
+            <div class="th-mobile-menu">
+                <ul>
+                    <!--<li class="menu-item-has-children mega-menu-wrap">-->
+                    <!--    <a class="active" href="home-travel.html">Home</a>-->
+
+                    <!--    <ul class="sub-menu">-->
+                    <!--        <li><a href="home-travel.html">Home Travel</a></li>-->
+                    <!--        <li><a href="home-tour.html">Home Tour</a></li>-->
+                    <!--        <li><a href="home-agency.html">Home Agency</a></li>-->
+                    <!--        <li><a href="home-yacht.html">Home Yacht</a></li>-->
+                    <!--        <li><a href="home-beach.html">Home Beach</a></li>-->
+                    <!--        <li><a href="home-resort.html">Home Resort</a></li>-->
+                    <!--        <li><a href="home-countryside-hotel.html">Home Countryside Hotel</a></li>-->
+                    <!--        <li><a href="home-forest.html">Home Forest</a></li>-->
+                    <!--    </ul>-->
+                    <!--</li>-->
+                    <!--<li><a href="about.html">About Us</a></li>-->
+                    <!--<li class="menu-item-has-children">-->
+                    <!--    <a href="#">Destination</a>-->
+                    <!--    <ul class="sub-menu">-->
+                    <!--        <li><a href="destination.html">Destination</a></li>-->
+                    <!--        <li><a href="destination-details.html">Destination Details</a></li>-->
+                    <!--    </ul>-->
+                    <!--</li>-->
+                    <!--<li class="menu-item-has-children">-->
+                    <!--    <a href="#">Service</a>-->
+                    <!--    <ul class="sub-menu">-->
+                    <!--        <li><a href="service.html">Services</a></li>-->
+                    <!--        <li><a href="service-details.html">Service Details</a></li>-->
+                    <!--    </ul>-->
+                    <!--</li>-->
+                    <!--<li class="menu-item-has-children">-->
+                    <!--    <a href="#">Activities</a>-->
+                    <!--    <ul class="sub-menu">-->
+                    <!--        <li><a href="activities.html">activities</a></li>-->
+                    <!--        <li><a href="activities-details.html">activities Details</a></li>-->
+                    <!--    </ul>-->
+                    <!--</li>-->
+                    <!--<li class="menu-item-has-children">-->
+                    <!--    <a href="#">Pages</a>-->
+                    <!--    <ul class="sub-menu">-->
+                    <!--        <li class="menu-item-has-children">-->
+                    <!--            <a href="#">Shop</a>-->
+                    <!--            <ul class="sub-menu">-->
+                    <!--                <li><a href="shop.html">Shop</a></li>-->
+                    <!--                <li><a href="shop-details.html">Shop Details</a></li>-->
+                    <!--                <li><a href="cart.html">Cart Page</a></li>-->
+                    <!--                <li><a href="checkout.html">Checkout</a></li>-->
+                    <!--                <li><a href="wishlist.html">Wishlist</a></li>-->
+                    <!--            </ul>-->
+                    <!--        </li>-->
+
+                    <!--        <li><a href="gallery.html">Gallery</a></li>-->
+                    <!--        <li><a href="tour.html">Our Tour</a></li>-->
+                    <!--        <li><a href="tour-details.html">Tour Details</a></li>-->
+                    <!--        <li><a href="resort.html">Resort page</a></li>-->
+                    <!--        <li><a href="resort-details.html">Resort Details</a></li>-->
+                    <!--        <li><a href="tour-details.html">Tour Details</a></li>-->
+                    <!--        <li><a href="tour-guide.html">Tour Guider</a></li>-->
+                    <!--        <li><a href="tour-guider-details.html">Tour Guider Details</a></li>-->
+                    <!--        <li><a href="faq.html">Faq Page</a></li>-->
+                    <!--        <li><a href="price.html">Price Package</a></li>-->
+                    <!--        <li><a href="error.html">Error Page</a></li>-->
+                    <!--    </ul>-->
+
+                    <!--</li>-->
+                    <!--<li class="menu-item-has-children">-->
+                    <!--    <a href="#">Blog</a>-->
+                    <!--    <ul class="sub-menu">-->
+                    <!--        <li><a href="blog.html">Blog</a></li>-->
+                    <!--        <li><a href="blog-details.html">Blog Details</a></li>-->
+                    <!--    </ul>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--    <a href="contact.html">Contact us</a>-->
+                    <!--</li>-->
+                </ul>
+            </div>
+        </div>
+    </div> <!--==============================
+    Header Area
+==============================-->
+    <header class="site-header">
+        <div class="header-wrapper">
+            <div class="header-content">
+                <div class="logo-section">
+                    <a href="index.html">
+                        <img src="assets/img/logo1.png" alt="Medmelo">
+                    </a>
+                </div>
+                <div class="cta-section">
+                    <a href="https://wa.me/message/45TJKJAJTE7KN1" class="whatsapp-button pulse-animation"
+                        target="_blank">
+                        <svg class="whatsapp-icon" viewBox="0 0 24 24">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.893 3.106" />
+                        </svg>
+                        Book Now on WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="header-bg" data-mask-src="assets/img/logo_bg_mask.png"></div>
+        </div>
+    </header>
+    <!--==============================
+Hero Area
+==============================-->
+    <div class="th-hero-wrapper hero-1" id="hero">
+        <div class="swiper th-slider hero-slider-1" id="heroSlide1"
+            data-slider-options='{"effect":"fade","menu": ["", "", ""],"heroSlide1": {"swiper-container": {"pagination": {"el": ".swiper-pagination", "clickable": true }}}}'>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="hero-inner">
+                        <div class="th-hero-bg" data-bg-src="assets/img/hero/hero_bg_1_1.jpg">
+                        </div>
+                        <div class="container">
+                            <div class="hero-style1">
+                                <span class="sub-title style1" data-ani="slideinup" data-ani-delay="0.2s"></span>
+                                <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.4s">
+                                    Medmelo: Your Guide to a Global Campus</h1>
+                                <!--<div class="btn-group" data-ani="slideinup" data-ani-delay="0.6s">-->
+                                <!--    <a href="tour.html" class="th-btn th-icon">Explore Tours</a>-->
+                                <!--    <a href="service.html" class="th-btn style2 th-icon">Our Services</a>-->
+                                <!--</div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="hero-inner">
+                        <div class="th-hero-bg" data-bg-src="assets/img/hero/hero_bg_1_2.jpg">
+                        </div>
+                        <div class="container">
+                            <div class="hero-style1">
+                                <span class="sub-title style1" data-ani="slideinup" data-ani-delay="0.2s"></span>
+                                <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.4s">
+                                    Where Your Ambitions Cross Continents</h1>
+                                <!--<div class="btn-group" data-ani="slideinup" data-ani-delay="0.6s">-->
+                                <!--    <a href="tour.html" class="th-btn th-icon">Explore Tours</a>-->
+                                <!--    <a href="service.html" class="th-btn style2 th-icon">Our Services</a>-->
+                                <!--</div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="hero-inner">
+                        <div class="th-hero-bg" data-bg-src="assets/img/hero/hero_bg_1_3.jpg">
+                        </div>
+                        <div class="container">
+                            <div class="hero-style1">
+                                <span class="sub-title style1" data-ani="slideinup" data-ani-delay="0.2s"></span>
+                                <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.4s">
+                                    From Dreams to Degree — The Medmelo Way</h1>
+                                <!--<div class="btn-group" data-ani="slideinup" data-ani-delay="0.6s">-->
+                                <!--    <a href="tour.html" class="th-btn th-icon">Explore Tours</a>-->
+                                <!--    <a href="service.html" class="th-btn style2 th-icon">Our Services</a>-->
+                                <!--</div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="hero-inner">
+                        <div class="th-hero-bg" data-bg-src="assets/img/hero/hero_bg_1_4.jpg">
+                        </div>
+                        <div class="container">
+                            <div class="hero-style1">
+                                <span class="sub-title style1" data-ani="slideinup" data-ani-delay="0.2s"></span>
+                                <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.4s">
+                                    Bridging Nations And Building Doctors</h1>
+                                <!--<div class="btn-group" data-ani="slideinup" data-ani-delay="0.6s">-->
+                                <!--    <a href="tour.html" class="th-btn th-icon">Explore Tours</a>-->
+                                <!--    <a href="service.html" class="th-btn style2 th-icon">Our Services</a>-->
+                                <!--</div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="hero-inner">
+                        <div class="th-hero-bg" data-bg-src="assets/img/hero/hero_bg_1_5.jpg">
+                        </div>
+                        <div class="container">
+                            <div class="hero-style1">
+                                <span class="sub-title style1" data-ani="slideinup" data-ani-delay="0.2s"></span>
+                                <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.4s">
+                                    Chase your Dreams with Medmelo</h1>
+                                <!--<div class="btn-group" data-ani="slideinup" data-ani-delay="0.6s">-->
+                                <!--    <a href="tour.html" class="th-btn th-icon">Explore Tours</a>-->
+                                <!--    <a href="service.html" class="th-btn style2 th-icon">Our Services</a>-->
+                                <!--</div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="th-swiper-custom">
+                <button data-slider-prev="#heroSlide1" class="slider-arrow slider-prev"><img
+                        src="assets/img/icon/right-arrow.svg" alt=""></button>
+                <div class="slider-pagination"></div>
+                <button data-slider-next="#heroSlide1" class="slider-arrow slider-next"><img
+                        src="assets/img/icon/left-arrow.svg" alt=""></button>
+            </div>
+
+        </div>
+    </div>
+    <!--======== / Hero Section ========--><!--==============================
+Booking Area  
+==============================-->
+    <!--<div class="booking-sec">-->
+    <!--    <div class="container">-->
+    <!--        <form action="mail.php" method="POST" class="booking-form ajax-contact">-->
+    <!--            <div class="input-wrap">-->
+    <!--                <div class="row align-items-center justify-content-between">-->
+    <!--                    <div class="form-group col-md-6 col-lg-auto">-->
+    <!--                        <div class="icon">-->
+    <!--                            <i class="fa-light fa-route"></i>-->
+    <!--                        </div>-->
+    <!--                        <div class="search-input">-->
+    <!--                            <label>Destination</label>-->
+    <!--                            <select name="subject" id="subject" class="form-select nice-select">-->
+    <!--                                <option value="Select Destination" selected disabled>Select Destination</option>-->
+    <!--                                <option value="Australia">Australia</option>-->
+    <!--                                <option value="Dubai">Dubai</option>-->
+    <!--                                <option value="England">England</option>-->
+    <!--                                <option value="Sweden">Sweden</option>-->
+    <!--                                <option value="Thailand">Thailand</option>-->
+    <!--                                <option value="Egypt">Egypt</option>-->
+    <!--                                <option value="Saudi Arab">Saudi Arab</option>-->
+    <!--                                <option value="Switzerland">Switzerland</option>-->
+    <!--                                <option value="Scandinavia">Scandinavia</option>-->
+    <!--                                <option value="Western Europe">Western Europe</option>-->
+    <!--                                <option value="Indonesia">Indonesia</option>-->
+    <!--                                <option class="Italy">Italy</option>-->
+    <!--                            </select>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                    <div class="form-group col-md-6 col-lg-auto">-->
+    <!--                        <div class="icon">-->
+    <!--                            <i class="fa-regular fa-person-hiking"></i>-->
+    <!--                        </div>-->
+    <!--                        <div class="search-input">-->
+    <!--                            <label>Type</label>-->
+    <!--                            <select class=" nice-select" name="Adventure" id="Adventure">-->
+    <!--                                <option value="Adventure" selected disabled>Adventure</option>-->
+    <!--                                <option value="Beach">Beach</option>-->
+    <!--                                <option value="Group Tour">Group Tour</option>-->
+    <!--                                <option value="Couple Tour">Couple Tour</option>-->
+    <!--                                <option value="Family Tour">Family Tour</option>-->
+    <!--                            </select>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                    <div class="form-group col-md-6 col-lg-auto">-->
+    <!--                        <div class="icon">-->
+    <!--                            <i class="fa-light fa-clock"></i>-->
+    <!--                        </div>-->
+    <!--                        <div class="search-input">-->
+    <!--                            <label>Duration</label>-->
+    <!--                            <select class="form-select nice-select" name="Duration" id="Duration">-->
+    <!--                                <option value="Normal" selected disabled>Duration</option>-->
+    <!--                                <option value="1">1 days</option>-->
+    <!--                                <option value="2">2 days</option>-->
+    <!--                                <option value="3">3 days</option>-->
+    <!--                                <option value="4">4 days</option>-->
+    <!--                                <option value="5">5 days</option>-->
+    <!--                                <option value="6">6 days</option>-->
+    <!--                                <option value="7">7 days</option>-->
+    <!--                            </select>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                    <div class="form-group col-md-6 col-lg-auto">-->
+    <!--                        <div class="icon">-->
+    <!--                            <i class="fa-light fa-map-location-dot"></i>-->
+    <!--                        </div>-->
+    <!--                        <div class="search-input">-->
+    <!--                            <label>Tour Category</label>-->
+    <!--                            <select name="subject" id="category" class="form-select nice-select">-->
+    <!--                                <option value="Normal" selected disabled>Luxury</option>-->
+    <!--                                <option value="1">Delux</option>-->
+    <!--                                <option value="2">Economy</option>-->
+    <!--                            </select>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                    <div class="form-btn col-md-12 col-lg-auto">-->
+    <!--                        <button class="th-btn"><img src="assets/img/icon/search.svg" alt="">Search</button>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <p class="form-messages mb-0 mt-3"></p>-->
+    <!--            </div>-->
+    <!--        </form>-->
+    <!--    </div>-->
+    <!--</div>-->
+    <!--==============================
+Category Area  
+==============================-->
+    <section class="category-area bg-top-center" data-bg-src="assets/img/bg/category_bg_1.png">
+        <div class="container th-container">
+            <div class="title-area text-center">
+                <span class="sub-title">Redefining Medical Dreams</span>
+                <h2 class="sec-title">Our Top Countries</h2>
+
+            </div>
+            <div class="swiper th-slider has-shadow categorySlider" id="categorySlider1"
+                data-bg-src="assets/img/bg/category_bg_1.png"
+                data-slider-options='{"spaceBetween": "50","breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"3"},"1400":{"slidesPerView":"5"}}}'>
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="category-card single">
+                            <div class="box-img global-img">
+                                <img src="assets/img/category/category_1_1.jpg" alt="Image">
+                            </div>
+                            <h3 class="box-title"><a>🇷🇺 Russia</a></h3>
+                            <a class="line-btn">Clinical Powerhouse</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="category-card single">
+                            <div class="box-img global-img">
+                                <img src="assets/img/category/category_1_6.jpg" alt="Image">
+                            </div>
+                            <h3 class="box-title"><a>🇩🇪 Germany</a></h3>
+                            <a class="line-btn">Next-Gen Medical Precision</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="category-card single">
+                            <div class="box-img global-img">
+                                <img src="assets/img/category/category_1_7.jpg" alt="Image">
+                            </div>
+                            <h3 class="box-title"><a>🇮🇹 Italy</a></h3>
+                            <a class="line-btn">Europe’s Cultural Core</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="category-card single">
+                            <div class="box-img global-img">
+                                <img src="assets/img/category/category_1_8.jpg" alt="Image">
+                            </div>
+                            <h3 class="box-title"><a>🇲🇾 Malaysia</a></h3>
+                            <a class="line-btn">Asia’s Academic Hub</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="category-card single">
+                            <div class="box-img global-img">
+                                <img src="assets/img/category/category_1_2.jpg" alt="Image">
+                            </div>
+                            <h3 class="box-title"><a>🇬🇪 Georgia</a></h3>
+                            <a class="line-btn">Euro Gateway</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="category-card single">
+                            <div class="box-img global-img">
+                                <img src="assets/img/category/category_1_3.jpg" alt="Image">
+                            </div>
+                            <h3 class="box-title"><a>🇺🇿 Uzbekistan</a></h3>
+                            <a class="line-btn">Emerging Leader</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="category-card single">
+                            <div class="box-img global-img">
+                                <img src="assets/img/category/category_1_4.jpg" alt="Image">
+                            </div>
+                            <h3 class="box-title"><a>🇰🇬 Kyrgyzstan</a></h3>
+                            <a class="line-btn">Value Destination</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="category-card single">
+                            <div class="box-img global-img">
+                                <img src="assets/img/category/category_1_5.jpg" alt="Image">
+                            </div>
+                            <h3 class="box-title"><a>🇰🇿 Kazakhstan</a></h3>
+                            <a class="line-btn">Smart Frontier</a>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <div class="slider-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!--==============================
+destination Area  
+==============================-->
+    <div class=" position-relative overflow-hidden ">
+        <div class="container">
+            <div class="title-area text-center">
+                <span class="sub-title">Dream.Believe.Achieve</span>
+                <h2 class="sec-title">Our Popular Universities</h2>
+
+            </div>
+            <div class="swiper th-slider destination-slider slider-drag-wrap" id="aboutSlider1"
+                data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"2"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"3"}},"effect":"coverflow","coverflowEffect":{"rotate":"0","stretch":"95","depth":"212","modifier":"1"},"centeredSlides":"true"}'>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="destination-box gsap-cursor">
+                            <div class="destination-img">
+                                <img src="assets/img/destination/destination_1_1.jpg" alt="destination image">
+                                <div class="destination-content">
+                                    <div class="media-left">
+                                        <h4 class="box-title">
+                                            <a>North - Western State<br>Medical University</a>
+                                        </h4>
+                                        <span class="destination-subtitle">🇷🇺 Russia</span>
+                                    </div>
+                                    <!--<div class="">-->
+                                    <!--    <a href="destination-details.html" class="th-btn style2 th-icon">View All</a>-->
+                                    <!--</div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="destination-box gsap-cursor">
+                            <div class="destination-img">
+                                <img src="assets/img/destination/destination_1_2.jpg" alt="destination image">
+                                <div class="destination-content">
+                                    <div class="media-left">
+                                        <h4 class="box-title">
+                                            <a>Tver State<br>Medical University</a>
+                                        </h4>
+                                        <span class="destination-subtitle">🇷🇺 Russia</span>
+                                    </div>
+                                    <!--<div class="">-->
+                                    <!--    <a href="destination-details.html" class="th-btn style2 th-icon">View All</a>-->
+                                    <!--</div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="destination-box gsap-cursor">
+                            <div class="destination-img">
+                                <img src="assets/img/destination/destination_1_3.jpg" alt="destination image">
+                                <div class="destination-content">
+                                    <div class="media-left">
+                                        <h4 class="box-title">
+                                            <a href="destination-details.html">Kemerovo State<br>Medical University</a>
+                                        </h4>
+                                        <span class="destination-subtitle">🇷🇺 Russia</span>
+                                    </div>
+                                    <!--<div class="">-->
+                                    <!--    <a href="destination-details.html" class="th-btn style2 th-icon">View All</a>-->
+                                    <!--</div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="destination-box gsap-cursor">
+                            <div class="destination-img">
+                                <img src="assets/img/destination/destination_1_4.jpg" alt="destination image">
+                                <div class="destination-content">
+                                    <div class="media-left">
+                                        <h4 class="box-title">
+                                            <a href="destination-details.html">Volgograd State<br>Medical University</a>
+                                        </h4>
+                                        <span class="destination-subtitle">🇷🇺 Russia</span>
+                                    </div>
+                                    <!--<div class="">-->
+                                    <!--    <a href="destination-details.html" class="th-btn style2 th-icon">View All</a>-->
+                                    <!--</div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="destination-box gsap-cursor">
+                            <div class="destination-img">
+                                <img src="assets/img/destination/destination_1_5.jpg" alt="destination image">
+                                <div class="destination-content">
+                                    <div class="media-left">
+                                        <h4 class="box-title">
+                                            <a href="destination-details.html">Tashkent Medical<br>Academy</a>
+                                        </h4>
+                                        <span class="destination-subtitle">🇺🇿 Uzbekistan</span>
+                                    </div>
+                                    <!--<div class="">-->
+                                    <!--    <a href="destination-details.html" class="th-btn style2 th-icon">View All</a>-->
+                                    <!--</div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="destination-box gsap-cursor">
+                            <div class="destination-img">
+                                <img src="assets/img/destination/destination_1_6.jpg" alt="destination image">
+                                <div class="destination-content">
+                                    <div class="media-left">
+                                        <h4 class="box-title">
+                                            <a href="destination-details.html">University Of Georgia</a>
+                                        </h4>
+                                        <span class="destination-subtitle">🇬🇪 Georgia</span>
+                                    </div>
+                                    <!--<div class="">-->
+                                    <!--    <a href="destination-details.html" class="th-btn style2 th-icon">View All</a>-->
+                                    <!--</div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="swiper-slide">-->
+                    <!--    <div class="destination-box gsap-cursor">-->
+                    <!--        <div class="destination-img">-->
+                    <!--            <img src="assets/img/destination/destination_1_2.jpg" alt="destination image">-->
+                    <!--            <div class="destination-content">-->
+                    <!--                <div class="media-left">-->
+                    <!--                    <h4 class="box-title">-->
+                    <!--                        <a href="destination-details.html">Thailand</a>-->
+                    <!--                    </h4>-->
+                    <!--                    <span class="destination-subtitle">22 Listing</span>-->
+                    <!--                </div>-->
+                    <!--                <div class="">-->
+                    <!--                    <a href="destination-details.html" class="th-btn style2 th-icon">View All</a>-->
+                    <!--                </div>-->
+                    <!--            </div>-->
+                    <!--        </div>-->
+                    <!--    </div>-->
+                    <!--</div>-->
+                    <!--<div class="swiper-slide">-->
+                    <!--    <div class="destination-box gsap-cursor">-->
+                    <!--        <div class="destination-img">-->
+                    <!--            <img src="assets/img/destination/destination_1_3.jpg" alt="destination image">-->
+                    <!--            <div class="destination-content">-->
+                    <!--                <div class="media-left">-->
+                    <!--                    <h4 class="box-title">-->
+                    <!--                        <a href="destination-details.html">Belgium</a>-->
+                    <!--                    </h4>-->
+                    <!--                    <span class="destination-subtitle">25 Listing</span>-->
+                    <!--                </div>-->
+                    <!--                <div class="">-->
+                    <!--                    <a href="destination-details.html" class="th-btn style2 th-icon">View All</a>-->
+                    <!--                </div>-->
+                    <!--            </div>-->
+                    <!--        </div>-->
+                    <!--    </div>-->
+                    <!--</div>-->
+                    <!--<div class="swiper-slide">-->
+                    <!--    <div class="destination-box gsap-cursor">-->
+                    <!--        <div class="destination-img">-->
+                    <!--            <img src="assets/img/destination/destination_1_4.jpg" alt="destination image">-->
+                    <!--            <div class="destination-content">-->
+                    <!--                <div class="media-left">-->
+                    <!--                    <h4 class="box-title">-->
+                    <!--                        <a href="destination-details.html">Island</a>-->
+                    <!--                    </h4>-->
+                    <!--                    <span class="destination-subtitle">28 Listing</span>-->
+                    <!--                </div>-->
+                    <!--                <div class="">-->
+                    <!--                    <a href="destination-details.html" class="th-btn style2 th-icon">View All</a>-->
+                    <!--                </div>-->
+                    <!--            </div>-->
+                    <!--        </div>-->
+                    <!--    </div>-->
+                    <!--</div>-->
+                    <!--<div class="swiper-slide">-->
+                    <!--    <div class="destination-box gsap-cursor">-->
+                    <!--        <div class="destination-img">-->
+                    <!--            <img src="assets/img/destination/destination_1_5.jpg" alt="destination image">-->
+                    <!--            <div class="destination-content">-->
+                    <!--                <div class="media-left">-->
+                    <!--                    <h4 class="box-title">-->
+                    <!--                        <a href="destination-details.html">Maldives</a>-->
+                    <!--                    </h4>-->
+                    <!--                    <span class="destination-subtitle">30 Listing</span>-->
+                    <!--                </div>-->
+                    <!--                <div class="">-->
+                    <!--                    <a href="destination-details.html" class="th-btn style2 th-icon">View All</a>-->
+                    <!--                </div>-->
+                    <!--            </div>-->
+                    <!--        </div>-->
+                    <!--    </div>-->
+                    <!--</div>-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--==============================
+About Area  
+==============================-->
+    <div class="about-area position-relative overflow-hidden space" id="about-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="img-box1">
+                        <div class="img1">
+                            <img src="assets/img/normal/about_1_1.jpg" alt="About">
+                        </div>
+                        <div class="img2">
+                            <img src="assets/img/normal/about_1_2.jpg" alt="About">
+                        </div>
+                        <div class="img3">
+                            <img src="assets/img/normal/about_1_3.jpg" alt="About">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="ps-xl-4 ms-xl-2">
+                        <div class="title-area mb-20 pe-xl-5 me-xl-5">
+                            <span class="sub-title style1 ">Let’s Begin Your Medical Journey</span>
+                            <h2 class="sec-title mb-20 pe-xl-5 me-xl-5 heading">with Medmelo</h2>
+
+                            <p class="sec-text mb-30">Book a Free MBBS Consultation Today — with India’s Most Trusted
+                                Abroad Education Partner
+                            </p>
+                        </div>
+                        <div class="about-item-wrap">
+                            <div class="about-item">
+                                <div class="about-item_img"><img src="assets/img/icon/map3.svg" alt=""></div>
+                                <div class="about-item_centent">
+                                    <h5 class="box-title">Personalised Guidance</h5>
+                                    <p class="about-item_text">Get matched to the best university based on your budget,
+                                        goals & country preference</p>
+                                </div>
+                            </div>
+                            <div class="about-item">
+                                <div class="about-item_img"><img src="assets/img/icon/guide.svg" alt=""></div>
+                                <div class="about-item_centent">
+                                    <h5 class="box-title">End-to-End Support</h5>
+                                    <p class="about-item_text">From admission to visa, travel, hostel, and settling
+                                        abroad — Medmelo educational consultancy handle it all</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <a href="https://wa.me/message/45TJKJAJTE7KN1" class="whatsapp-button pulse-animation"
+                            target="_blank">
+                            <svg class="whatsapp-icon" viewBox="0 0 24 24">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.893 3.106" />
+                            </svg>
+                            Book Now on WhatsApp
+                        </a>
+
+
+                        <!--<p style="font-size: 12px; color: #999; margin-top: 20px;">-->
+                        <!--    Click to start booking via WhatsApp-->
+                        <!--</p>                    </div>-->
+                        <!--    </div>-->
+                        <!--</div>-->
+
+                        <div class="shape-mockup shape1 d-none d-xl-block" data-top="12%" data-left="-16%">
+                            <img src="assets/img/shape/shape_1.png" alt="shape">
+                        </div>
+                        <div class="shape-mockup shape2 d-none d-xl-block" data-top="20%" data-left="-16%">
+                            <img src="assets/img/shape/shape_2.png" alt="shape">
+                        </div>
+                        <div class="shape-mockup shape3 d-none d-xl-block" data-top="14%" data-left="-10%">
+                            <img src="assets/img/shape/shape_3.png" alt="shape">
+                        </div>
+
+                        <div class="shape-mockup about-shape movingX d-none d-xxl-block" data-bottom="0%"
+                            data-right="-11%">
+                            <img src="assets/img/normal/about-slide-img.png" alt="shape">
+                        </div>
+                        <div class="shape-mockup about-rating d-none d-xxl-block" data-bottom="50%" data-right="-20%">
+                            <i class="fa-sharp fa-solid fa-star"></i><span>4.9k</span>
+                        </div>
+                        <div class="shape-mockup about-emoji d-none d-xxl-block" data-bottom="25%" data-right="5%"><img
+                                src="assets/img/icon/emoji.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+                <!--==============================
+Service Area  
+==============================-->
+
+                <br>
+                <br>
+                <section class="tour-area position-relative bg-top-center overflow-hidden space" id="service-sec"
+                    data-bg-src="assets/img/bg/tour_bg_1.jpg">
+                    <!-- Floating Particles -->
+                    <div class="particles">
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 offset-lg-3">
+                                <div class="title-area text-center">
+                                    <span class="sub-title">Discover the Legacy</span>
+                                    <h2 class="sec-title">Beyond Education</h2>
+                                    <p class="sec-text">Medmelo proudly presents South Indian actress Niranjana Anoop as
+                                        the face of our educational revolution. Watch how we blend purpose, prestige,
+                                        and powerful storytelling through this cinematic showcase.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-10 offset-lg-1">
+                                <!-- Enhanced Stylish Video Container -->
+                                <div class="video-wrapper">
+                                    <div class="video-decoration decoration-1"></div>
+                                    <div class="video-decoration decoration-2"></div>
+                                    <div class="video-decoration decoration-3"></div>
+
+                                    <div class="video-box">
+                                        <iframe
+                                            src="https://www.youtube.com/embed/eLcdw8Fcffg?si=JSRwMjzKbFly2bnm?autoplay=0&mute=0&controls=1&loop=0&rel=0&showinfo=0&modestbranding=1"
+                                            title="Most Popular Tour Experience" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--<div class="slider-area tour-slider ">-->
+                <!--    <div class="swiper th-slider has-shadow slider-drag-wrap" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"3"},"1300":{"slidesPerView":"4"}}}'>-->
+                <!--        <div class="swiper-wrapper">-->
+                <!--<div class="swiper-slide">-->
+                <!--    <div class="tour-box th-ani gsap-cursor">-->
+                <!--        <div class="tour-box_img global-img">-->
+                <!--            <img src="assets/img/tour/tour_box_1.jpg" alt="image">-->
+                <!--        </div>-->
+                <!--        <div class="tour-content">-->
+                <!--            <h3 class="box-title"><a href="tour-details.html">Greece Tour Package</a></h3>-->
+                <!--            <div class="tour-rating">-->
+                <!--                <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5"><span style="width:100%">Rated-->
+                <!--                        <strong class="rating">5.00</strong> out of 5 based on <span class="rating">4.8</span>(4.8-->
+                <!--                        Rating)</span></div>-->
+                <!--                <a href="tour-details.html" class="woocommerce-review-link">(<span class="count">4.8</span>-->
+                <!--                    Rating)</a>-->
+                <!--            </div>-->
+                <!--            <h4 class="tour-box_price"><span class="currency">$980.00</span>/Person</h4>-->
+                <!--            <div class="tour-action">-->
+                <!--                <span><i class="fa-light fa-clock"></i>7 Days</span>-->
+                <!--                <a href="contact.html" class="th-btn style4 th-icon">Book Now</a>-->
+                <!--            </div>-->
+                <!--        </div>-->
+                <!--    </div>-->
+                <!--</div>-->
+
+                <!--<div class="swiper-slide">-->
+                <!--    <div class="tour-box th-ani gsap-cursor">-->
+                <!--        <div class="tour-box_img global-img">-->
+                <!--            <img src="assets/img/tour/tour_box_2.jpg" alt="image">-->
+                <!--        </div>-->
+                <!--        <div class="tour-content">-->
+                <!--            <h3 class="box-title"><a href="tour-details.html">Italy Tour package</a></h3>-->
+                <!--            <div class="tour-rating">-->
+                <!--                <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5"><span style="width:100%">Rated-->
+                <!--                        <strong class="rating">5.00</strong> out of 5 based on <span class="rating">4.8</span>(4.8-->
+                <!--                        Rating)</span></div>-->
+                <!--                <a href="tour-details.html" class="woocommerce-review-link">(<span class="count">4.8</span>-->
+                <!--                    Rating)</a>-->
+                <!--            </div>-->
+                <!--            <h4 class="tour-box_price"><span class="currency">$980.00</span>/Person</h4>-->
+                <!--            <div class="tour-action">-->
+                <!--                <span><i class="fa-light fa-clock"></i>7 Days</span>-->
+                <!--                <a href="contact.html" class="th-btn style4 th-icon">Book Now</a>-->
+                <!--            </div>-->
+                <!--        </div>-->
+                <!--    </div>-->
+                <!--</div>-->
+
+                <!--<div class="swiper-slide">-->
+                <!--    <div class="tour-box th-ani gsap-cursor">-->
+                <!--        <div class="tour-box_img global-img">-->
+                <!--            <img src="assets/img/tour/tour_box_3.jpg" alt="image">-->
+                <!--        </div>-->
+                <!--        <div class="tour-content">-->
+                <!--            <h3 class="box-title"><a href="tour-details.html">Dubai Tour Package</a></h3>-->
+                <!--            <div class="tour-rating">-->
+                <!--                <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5"><span style="width:100%">Rated-->
+                <!--                        <strong class="rating">5.00</strong> out of 5 based on <span class="rating">4.8</span>(4.8-->
+                <!--                        Rating)</span></div>-->
+                <!--                <a href="tour-details.html" class="woocommerce-review-link">(<span class="count">4.8</span>-->
+                <!--                    Rating)</a>-->
+                <!--            </div>-->
+                <!--            <h4 class="tour-box_price"><span class="currency">$980.00</span>/Person</h4>-->
+                <!--            <div class="tour-action">-->
+                <!--                <span><i class="fa-light fa-clock"></i>7 Days</span>-->
+                <!--                <a href="contact.html" class="th-btn style4 th-icon">Book Now</a>-->
+                <!--            </div>-->
+                <!--        </div>-->
+                <!--    </div>-->
+                <!--</div>-->
+
+                <!--<div class="swiper-slide">-->
+                <!--    <div class="tour-box th-ani gsap-cursor">-->
+                <!--        <div class="tour-box_img global-img">-->
+                <!--            <img src="assets/img/tour/tour_box_4.jpg" alt="image">-->
+                <!--        </div>-->
+                <!--        <div class="tour-content">-->
+                <!--            <h3 class="box-title"><a href="tour-details.html">Switzerland</a></h3>-->
+                <!--            <div class="tour-rating">-->
+                <!--                <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5"><span style="width:100%">Rated-->
+                <!--                        <strong class="rating">5.00</strong> out of 5 based on <span class="rating">4.8</span>(4.8-->
+                <!--                        Rating)</span></div>-->
+                <!--                <a href="tour-details.html" class="woocommerce-review-link">(<span class="count">4.8</span>-->
+                <!--                    Rating)</a>-->
+                <!--            </div>-->
+                <!--            <h4 class="tour-box_price"><span class="currency">$980.00</span>/Person</h4>-->
+                <!--            <div class="tour-action">-->
+                <!--                <span><i class="fa-light fa-clock"></i>7 Days</span>-->
+                <!--                <a href="contact.html" class="th-btn style4 th-icon">Book Now</a>-->
+                <!--            </div>-->
+                <!--        </div>-->
+                <!--    </div>-->
+                <!--</div>-->
+
+                <!--<div class="swiper-slide">-->
+                <!--    <div class="tour-box th-ani gsap-cursor">-->
+                <!--        <div class="tour-box_img global-img">-->
+                <!--            <img src="assets/img/tour/tour_box_1.jpg" alt="image">-->
+                <!--        </div>-->
+                <!--        <div class="tour-content">-->
+                <!--            <h3 class="box-title"><a href="tour-details.html">Greece Tour Package</a></h3>-->
+                <!--            <div class="tour-rating">-->
+                <!--                <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5"><span style="width:100%">Rated-->
+                <!--                        <strong class="rating">5.00</strong> out of 5 based on <span class="rating">4.8</span>(4.8-->
+                <!--                        Rating)</span></div>-->
+                <!--                <a href="tour-details.html" class="woocommerce-review-link">(<span class="count">4.8</span>-->
+                <!--                    Rating)</a>-->
+                <!--            </div>-->
+                <!--            <h4 class="tour-box_price"><span class="currency">$980.00</span>/Person</h4>-->
+                <!--            <div class="tour-action">-->
+                <!--                <span><i class="fa-light fa-clock"></i>7 Days</span>-->
+                <!--                <a href="contact.html" class="th-btn style4 th-icon">Book Now</a>-->
+                <!--            </div>-->
+                <!--        </div>-->
+                <!--    </div>-->
+                <!--</div>-->
+
+                <!--<div class="swiper-slide">-->
+                <!--    <div class="tour-box th-ani gsap-cursor">-->
+                <!--        <div class="tour-box_img global-img">-->
+                <!--            <img src="assets/img/tour/tour_box_2.jpg" alt="image">-->
+                <!--        </div>-->
+                <!--        <div class="tour-content">-->
+                <!--            <h3 class="box-title"><a href="tour-details.html">Italy Tour package</a></h3>-->
+                <!--            <div class="tour-rating">-->
+                <!--                <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5"><span style="width:100%">Rated-->
+                <!--                        <strong class="rating">5.00</strong> out of 5 based on <span class="rating">4.8</span>(4.8-->
+                <!--                        Rating)</span></div>-->
+                <!--                <a href="tour-details.html" class="woocommerce-review-link">(<span class="count">4.8</span>-->
+                <!--                    Rating)</a>-->
+                <!--            </div>-->
+                <!--            <h4 class="tour-box_price"><span class="currency">$980.00</span>/Person</h4>-->
+                <!--            <div class="tour-action">-->
+                <!--                <span><i class="fa-light fa-clock"></i>7 Days</span>-->
+                <!--                <a href="contact.html" class="th-btn style4 th-icon">Book Now</a>-->
+                <!--            </div>-->
+                <!--        </div>-->
+                <!--    </div>-->
+                <!--</div>-->
+
+
+                <!--        </div>-->
+                <!--    </div>-->
+                <!--</div>-->
+                <!--</div>-->
+
+                <!--</section>-->
+
+
+
+                <!--==============================
+Gallery Area  
+==============================-->
+                <div class="gallery-area ">
+                    <div class="container th-container">
+                        <div class="title-area text-center">
+                            <span class="sub-title">Medmelo Featuring</span>
+                            <h2 class="sec-title">Niranjana Anoop as Our Brand Icon</h2>
+                        </div>
+                        <div class="row gy-10 gx-10 justify-content-center align-items-center">
+                            <div class="col-md-6 col-lg-2">
+                                <div class="gallery-card">
+                                    <div class="box-img global-img">
+                                        <a href="assets/img/gallery/gallery_1_1.jpg" class="popup-image">
+                                            <div class="icon-btn"><i class="fal fa-magnifying-glass-plus"></i></div>
+                                            <img src="assets/img/gallery/gallery_1_1.jpg" alt="gallery image">
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6 col-lg-2">
+                                <div class="gallery-card">
+                                    <div class="box-img global-img">
+                                        <a href="assets/img/gallery/gallery_1_2.jpg" class="popup-image">
+                                            <div class="icon-btn"><i class="fal fa-magnifying-glass-plus"></i></div>
+                                            <img src="assets/img/gallery/gallery_1_2.jpg" alt="gallery image">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="gallery-card">
+                                    <div class="box-img global-img">
+                                        <a href="assets/img/gallery/gallery_1_3.jpg" class="popup-image">
+                                            <div class="icon-btn"><i class="fal fa-magnifying-glass-plus"></i></div>
+                                            <img src="assets/img/gallery/gallery_1_3.jpg" alt="gallery image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-2">
+                                <div class="gallery-card">
+                                    <div class="box-img global-img">
+                                        <a href="assets/img/gallery/gallery_1_4.jpg" class="popup-image">
+                                            <div class="icon-btn"><i class="fal fa-magnifying-glass-plus"></i></div>
+                                            <img src="assets/img/gallery/gallery_1_4.jpg" alt="gallery image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-2">
+                                <div class="gallery-card">
+                                    <div class="box-img global-img">
+                                        <a href="assets/img/gallery/gallery_1_5.jpg" class="popup-image">
+                                            <div class="icon-btn"><i class="fal fa-magnifying-glass-plus"></i></div>
+                                            <img src="assets/img/gallery/gallery_1_5.jpg" alt="gallery image">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="gallery-card">
+                                    <div class="box-img global-img">
+                                        <a href="assets/img/gallery/gallery_1_6.jpg" class="popup-image">
+                                            <div class="icon-btn"><i class="fal fa-magnifying-glass-plus"></i></div>
+                                            <img src="assets/img/gallery/gallery_1_6.jpg" alt="gallery image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-2">
+                                <div class="gallery-card">
+                                    <div class="box-img global-img">
+                                        <a href="assets/img/gallery/gallery_1_7.jpg" class="popup-image">
+                                            <div class="icon-btn"><i class="fal fa-magnifying-glass-plus"></i></div>
+                                            <img src="assets/img/gallery/gallery_1_7.jpg" alt="gallery image">
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="shape-mockup  d-none d-xl-block" data-top="-25%" data-left="0%">
+                            <img src="assets/img/shape/line.png" alt="shape">
+                        </div>
+                        <div class="shape-mockup movingX d-none d-xl-block" data-top="30%" data-left="-3%">
+                            <img class="gmovingX" src="assets/img/shape/shape_4.png" alt="shape">
+                        </div>
+                    </div>
+                </div><!--==============================
+Counter Area  
+==============================-->
+                <div class="counter-area space">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-sm-6 col-xl-3 counter-card-wrap">
+                                <div class="counter-card">
+                                    <div class="counter-shape"><span></span></div>
+                                    <div class="media-body">
+                                        <h3 class="box-number"><span class="counter-number">10</span>+</h3>
+                                        <h6 class="counter-title">Nations Connected</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-xl-3 counter-card-wrap">
+                                <div class="counter-card">
+                                    <div class="counter-shape"><span></span></div>
+                                    <div class="media-body">
+                                        <h3 class="box-number"><span class="counter-number">30</span>+</h3>
+                                        <h6 class="counter-title">Elite Institutions</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-xl-3 counter-card-wrap">
+                                <div class="counter-card">
+                                    <div class="counter-shape"><span></span></div>
+                                    <div class="media-body">
+                                        <h3 class="box-number"><span class="counter-number">500</span>+</h3>
+                                        <h6 class="counter-title">Dreams Delivered</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-xl-3 counter-card-wrap">
+                                <div class="counter-card">
+                                    <div class="counter-shape"><span></span></div>
+                                    <div class="media-body">
+                                        <h3 class="box-number"><span class="counter-number">3</span>+</h3>
+                                        <h6 class="counter-title">Years of Experience</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shape-mockup shape1 d-none d-xl-block" data-top="30%" data-left="-15%">
+                            <img src="assets/img/shape/shape_1.png" alt="shape">
+                        </div>
+                        <div class="shape-mockup shape2 d-none d-xl-block" data-top="45%" data-left="-13%">
+                            <img src="assets/img/shape/shape_2.png" alt="shape">
+                        </div>
+                        <div class="shape-mockup shape3 d-none d-xl-block" data-top="32%" data-left="-7%">
+                            <img src="assets/img/shape/shape_3.png" alt="shape">
+                        </div>
+                        <div class="shape-mockup d-none d-xl-block" data-bottom="-24%" data-left="-15%">
+                            <img src="assets/img/shape/shape_6.png" alt="shape">
+                        </div>
+                        <div class="shape-mockup jump d-none d-xl-block" data-top="5%" data-right="-10%">
+                            <img src="assets/img/shape/shape_5.png" alt="shape">
+                        </div>
+                    </div>
+                </div><!--==============================
+Team Area  
+==============================-->
+                <section class="bg-smoke space" data-bg-src="assets/img/bg/team_bg_1.png">
+                    <div class="container z-index-common">
+                        <div class="title-area text-center">
+                            <span class="sub-title">Meet Team Medmelo</span>
+                            <h2 class="sec-title">The Faces Guiding Your Journey Abroad</h2>
+                        </div>
+                        <div class="slider-area">
+                            <div class="swiper th-slider teamSlider1 has-shadow" id="teamSlider1"
+                                data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"4"}}}'>
+                                <div class="swiper-wrapper">
+
+
+                                    <!-- Single Item -->
+                                    <!-- <div class="swiper-slide">
+                            <div class="th-team team-box">
+                                <div class="team-img">
+                                    <img src="assets/img/team/team_1_1.jpg" alt="Team">
+                                </div>
+                                <div class="team-content">
+                                    <div class="media-body">
+                                        <h3 class="box-title"><a>Dr. Shahina Shabji</a></h3>
+                                        <span class="team-desig">Vice President – International Operations</span>
+                                        <div class="th-social">
+                                            <a target="_blank" ><i class="fab fa-facebook-f"></i></a>
+                                            <a target="_blank" ><i class="fab fa-twitter"></i></a>
+                                            <a target="_blank" ><i class="fab fa-instagram"></i></a>
+                                            <a target="_blank" ><i class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+
+                                    <!-- Single Item -->
+                                    <div class="swiper-slide">
+                                        <div class="th-team team-box">
+                                            <div class="team-img">
+                                                <img src="assets/img/team/team_1_2.jpg" alt="Team">
+                                            </div>
+                                            <div class="team-content">
+                                                <div class="media-body">
+                                                    <h3 class="box-title"><a>Alan VL</a></h3>
+                                                    <span class="team-desig">Founder & CEO - The Medmelo Empire</span>
+                                                    <div class="th-social">
+                                                        <a target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                                        <a target="_blank"><i class="fab fa-twitter"></i></a>
+                                                        <a target="_blank"
+                                                            href="https://www.instagram.com/toxicxposer?igsh=enRieXZraDZlOGY5&utm_source=qr"><i
+                                                                class="fab fa-instagram"></i></a>
+                                                        <a target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Single Item -->
+                                    <div class="swiper-slide">
+                                        <div class="th-team team-box">
+                                            <div class="team-img">
+                                                <img src="assets/img/team/team_1_3.jpg" alt="Team">
+                                            </div>
+                                            <div class="team-content">
+                                                <div class="media-body">
+                                                    <h3 class="box-title"><a>Dr. Aleena V.L</a></h3>
+                                                    <span class="team-desig">Managing Director (MD) - Medmelo
+                                                        Learning</span>
+                                                    <div class="th-social">
+                                                        <a target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                                        <a target="_blank"><i class="fab fa-twitter"></i></a>
+                                                        <a target="_blank"><i class="fab fa-instagram"></i></a>
+                                                        <a target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <!-- Single Item -->
+                                    <div class="swiper-slide">
+                                        <div class="th-team team-box">
+                                            <div class="team-img">
+                                                <img src="assets/img/team/team_1_6.jpg" alt="Team">
+                                            </div>
+                                            <div class="team-content">
+                                                <div class="media-body">
+                                                    <h3 class="box-title"><a>Vijayanand G</a></h3>
+                                                    <span class="team-desig">Senior Advisor & Legacy Mentor</span>
+                                                    <div class="th-social">
+                                                        <a target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                                        <a target="_blank"><i class="fab fa-twitter"></i></a>
+                                                        <a target="_blank"><i class="fab fa-instagram"></i></a>
+                                                        <a target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Single Item -->
+                                    <!--<div class="swiper-slide">-->
+                                    <!--    <div class="th-team team-box">-->
+                                    <!--        <div class="team-img">-->
+                                    <!--            <img src="assets/img/team/team_1_3.jpg" alt="Team">-->
+                                    <!--        </div>-->
+                                    <!--        <div class="team-content">-->
+                                    <!--            <div class="media-body">-->
+                                    <!--                <h3 class="box-title"><a href="tour-guider-details.html">Guy Hawkins</a></h3>-->
+                                    <!--                <span class="team-desig">Tourist Guide</span>-->
+                                    <!--                <div class="th-social">-->
+                                    <!--                    <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>-->
+                                    <!--                    <a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>-->
+                                    <!--                    <a target="_blank" href="https://instagram.com/"><i class="fab fa-instagram"></i></a>-->
+                                    <!--                    <a target="_blank" href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>-->
+                                    <!--                </div>-->
+                                    <!--            </div>-->
+                                    <!--        </div>-->
+                                    <!--    </div>-->
+                                    <!--</div>-->
+
+                                    <!-- Single Item -->
+                                    <!--<div class="swiper-slide">-->
+                                    <!--    <div class="th-team team-box">-->
+                                    <!--        <div class="team-img">-->
+                                    <!--            <img src="assets/img/team/team_1_4.jpg" alt="Team">-->
+                                    <!--        </div>-->
+                                    <!--        <div class="team-content">-->
+                                    <!--            <div class="media-body">-->
+                                    <!--                <h3 class="box-title"><a href="tour-guider-details.html">Jenny Wilson</a></h3>-->
+                                    <!--                <span class="team-desig">Tourist Guide</span>-->
+                                    <!--                <div class="th-social">-->
+                                    <!--                    <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>-->
+                                    <!--                    <a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>-->
+                                    <!--                    <a target="_blank" href="https://instagram.com/"><i class="fab fa-instagram"></i></a>-->
+                                    <!--                    <a target="_blank" href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>-->
+                                    <!--                </div>-->
+                                    <!--            </div>-->
+                                    <!--        </div>-->
+                                    <!--    </div>-->
+                                    <!--</div>-->
+
+                                </div>
+                                <div class="slider-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section><!--==============================
+Testimonial Area  
+==============================-->
+                <section class="testi-area overflow-hidden space" id="testi-sec">
+                    <div class="container-fluid p-0">
+                        <div class="title-area mb-20 text-center">
+                            <span class="sub-title">Testimonial</span>
+                            <h2 class="sec-title">What Students Say About us</h2>
+                        </div>
+                        <div class="slider-area">
+                            <div class="swiper th-slider testiSlider1 has-shadow" id="testiSlider1"
+                                data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"767":{"slidesPerView":"2","centeredSlides":"true"},"992":{"slidesPerView":"2","centeredSlides":"true"},"1200":{"slidesPerView":"2","centeredSlides":"true"},"1400":{"slidesPerView":"3","centeredSlides":"true"}}}'>
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="testi-card">
+                                            <div class="testi-card_wrapper">
+                                                <div class="testi-card_profile">
+                                                    <div class="testi-card_avater">
+                                                        <img src="assets/img/testimonial/testi_1_1.jpg"
+                                                            alt="testimonial">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h3 class="box-title">Vishal Kashyap</h3>
+                                                        <span class="testi-card_desig">1st yr MBBS, Tver State Medical
+                                                            University</span>
+                                                    </div>
+                                                </div>
+                                                <div class="testi-card_review">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+
+                                            <p class="testi-card_text">“Choosing Medmelo was the best decision of my
+                                                life. From the moment I applied to the day I landed in Russia, their
+                                                support was constant and personal. They made the whole MBBS admission
+                                                process simple, transparent, and stress-free. Today, I’m studying at one
+                                                of the top universities in Russia and living my dream. Thank you,
+                                                Medmelo, for turning my dream into reality”</p>
+                                            <div class="testi-card-quote">
+                                                <img src="assets/img/icon/testi-quote.svg" alt="img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="testi-card">
+                                            <div class="testi-card_wrapper">
+                                                <div class="testi-card_profile">
+                                                    <div class="testi-card_avater">
+                                                        <img src="assets/img/testimonial/testi_1_2.jpg"
+                                                            alt="testimonial">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h3 class="box-title">Rishabh Shukla</h3>
+                                                        <span class="testi-card_desig">1st yr MBBS, Tver State Medical
+                                                            University</span>
+                                                    </div>
+                                                </div>
+                                                <div class="testi-card_review">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+
+                                            <p class="testi-card_text">“I was nervous about studying abroad, but Medmelo
+                                                made it feel simple and secure. They guided me step by step — from
+                                                choosing Tver State Medical University to helping with travel and hostel
+                                                arrangements. Now I’m here in Russia, studying what I love, with full
+                                                focus and zero stress. Medmelo truly opened the door to my future”</p>
+                                            <div class="testi-card-quote">
+                                                <img src="assets/img/icon/testi-quote.svg" alt="img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="testi-card">
+                                            <div class="testi-card_wrapper">
+                                                <div class="testi-card_profile">
+                                                    <div class="testi-card_avater">
+                                                        <img src="assets/img/testimonial/testi_1_3.jpg"
+                                                            alt="testimonial">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h3 class="box-title">Sneha R</h3>
+                                                        <span class="testi-card_desig">1st yr MBBS, University Of
+                                                            Georgia</span>
+                                                    </div>
+                                                </div>
+                                                <div class="testi-card_review">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+
+                                            <p class="testi-card_text">“I always dreamed of studying medicine in a safe,
+                                                student-friendly country — and Medmelo helped me find that in Georgia.
+                                                From selecting the right university to getting my visa, they handled
+                                                everything with care. What I loved most was how personal and prompt
+                                                their support was, even after I arrived. Medmelo isn’t just a
+                                                consultancy — they’re like family”</p>
+                                            <div class="testi-card-quote">
+                                                <img src="assets/img/icon/testi-quote.svg" alt="img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="testi-card">
+                                            <div class="testi-card_wrapper">
+                                                <div class="testi-card_profile">
+                                                    <div class="testi-card_avater">
+                                                        <img src="assets/img/testimonial/testi_1_4.jpg"
+                                                            alt="testimonial">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h3 class="box-title">Lakshmi M Nair</h3>
+                                                        <span class="testi-card_desig">2nd yr MBBS, North-Western State
+                                                            Medical University</span>
+                                                    </div>
+                                                </div>
+                                                <div class="testi-card_review">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+
+                                            <p class="testi-card_text">“Studying at North-Western State Medical
+                                                University has been a life-changing experience. From day one, Medmelo
+                                                was by my side — helping with university selection, visa, and even
+                                                settling into my hostel in St. Petersburg. The campus is beautiful, the
+                                                faculty is excellent, and the exposure here is truly international. As a
+                                                girl living abroad for the first time, I felt completely safe and
+                                                supported. Medmelo made everything possible”</p>
+                                            <div class="testi-card-quote">
+                                                <img src="assets/img/icon/testi-quote.svg" alt="img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="testi-card">
+                                            <div class="testi-card_wrapper">
+                                                <div class="testi-card_profile">
+                                                    <div class="testi-card_avater">
+                                                        <img src="assets/img/testimonial/testi_1_5.jpg"
+                                                            alt="testimonial">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h3 class="box-title">Rani Vanshika</h3>
+                                                        <span class="testi-card_desig">1st yr MBBS, Kemorovo State
+                                                            Medical Univerisity</span>
+                                                    </div>
+                                                </div>
+                                                <div class="testi-card_review">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+
+                                            <p class="testi-card_text">“Life at Kemerovo State Medical University has
+                                                been better than I imagined. The hostel is clean, safe, and well-heated
+                                                — perfect for Indian students. We have an Indian mess that serves tasty,
+                                                homely food regularly. The professors are kind, approachable, and teach
+                                                in English, making learning smooth. Thanks to Medmelo, my entire journey
+                                                — from admission to settling in — was completely stress-free. I’m truly
+                                                happy and proud to be here”</p>
+                                            <div class="testi-card-quote">
+                                                <img src="assets/img/icon/testi-quote.svg" alt="img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--<div class="swiper-slide">-->
+                                    <!--    <div class="testi-card">-->
+                                    <!--        <div class="testi-card_wrapper">-->
+                                    <!--            <div class="testi-card_profile">-->
+                                    <!--                <div class="testi-card_avater">-->
+                                    <!--                    <img src="assets/img/testimonial/testi_1_1.jpg" alt="testimonial">-->
+                                    <!--                </div>-->
+                                    <!--                <div class="media-body">-->
+                                    <!--                    <h3 class="box-title">Maria Doe</h3>-->
+                                    <!--                    <span class="testi-card_desig">Traveller</span>-->
+                                    <!--                </div>-->
+                                    <!--            </div>-->
+                                    <!--            <div class="testi-card_review">-->
+                                    <!--                <i class="fa-solid fa-star"></i>-->
+                                    <!--                <i class="fa-solid fa-star"></i>-->
+                                    <!--                <i class="fa-solid fa-star"></i>-->
+                                    <!--                <i class="fa-solid fa-star"></i>-->
+                                    <!--                <i class="fa-solid fa-star"></i>-->
+                                    <!--            </div>-->
+                                    <!--        </div>-->
+
+                                    <!--        <p class="testi-card_text">“A home that perfectly blends sustainability with luxury until I discovered Ecoland Residence. From the moment I stepped into this community, I knew it was where I wanted to live. The commitment to eco-friendly living”</p>-->
+                                    <!--        <div class="testi-card-quote">-->
+                                    <!--            <img src="assets/img/icon/testi-quote.svg" alt="img">-->
+                                    <!--        </div>-->
+                                    <!--    </div>-->
+                                    <!--</div>-->
+                                    <!--<div class="swiper-slide">-->
+                                    <!--    <div class="testi-card">-->
+                                    <!--        <div class="testi-card_wrapper">-->
+                                    <!--            <div class="testi-card_profile">-->
+                                    <!--                <div class="testi-card_avater">-->
+                                    <!--                    <img src="assets/img/testimonial/testi_1_2.jpg" alt="testimonial">-->
+                                    <!--                </div>-->
+                                    <!--                <div class="media-body">-->
+                                    <!--                    <h3 class="box-title">Andrew Simon</h3>-->
+                                    <!--                    <span class="testi-card_desig">Traveller</span>-->
+                                    <!--                </div>-->
+                                    <!--            </div>-->
+                                    <!--            <div class="testi-card_review">-->
+                                    <!--                <i class="fa-solid fa-star"></i>-->
+                                    <!--                <i class="fa-solid fa-star"></i>-->
+                                    <!--                <i class="fa-solid fa-star"></i>-->
+                                    <!--                <i class="fa-solid fa-star"></i>-->
+                                    <!--                <i class="fa-solid fa-star"></i>-->
+                                    <!--            </div>-->
+                                    <!--        </div>-->
+
+                                    <!--        <p class="testi-card_text">“A home that perfectly blends sustainability with luxury until I discovered Ecoland Residence. From the moment I stepped into this community, I knew it was where I wanted to live. The commitment to eco-friendly living”</p>-->
+                                    <!--        <div class="testi-card-quote">-->
+                                    <!--            <img src="assets/img/icon/testi-quote.svg" alt="img">-->
+                                    <!--        </div>-->
+                                    <!--    </div>-->
+                                    <!--</div>-->
+                                    <!--<div class="swiper-slide">-->
+                                    <!--    <div class="testi-card">-->
+                                    <!--        <div class="testi-card_wrapper">-->
+                                    <!--            <div class="testi-card_profile">-->
+                                    <!--                <div class="testi-card_avater">-->
+                                    <!--                    <img src="assets/img/testimonial/testi_1_1.jpg" alt="testimonial">-->
+                                    <!--                </div>-->
+                                    <!--                <div class="media-body">-->
+                                    <!--                    <h3 class="box-title">Alex Jordan</h3>-->
+                                    <!--                    <span class="testi-card_desig">Traveller</span>-->
+                                    <!--                </div>-->
+                                    <!--            </div>-->
+                                    <!--            <div class="testi-card_review">-->
+                                    <!--                <i class="fa-solid fa-star"></i>-->
+                                    <!--                <i class="fa-solid fa-star"></i>-->
+                                    <!--                <i class="fa-solid fa-star"></i>-->
+                                    <!--                <i class="fa-solid fa-star"></i>-->
+                                    <!--                <i class="fa-solid fa-star"></i>-->
+                                    <!--            </div>-->
+                                    <!--        </div>-->
+
+                                    <!--        <p class="testi-card_text">“A home that perfectly blends sustainability with luxury until I discovered Ecoland Residence. From the moment I stepped into this community, I knew it was where I wanted to live. The commitment to eco-friendly living”</p>-->
+                                    <!--        <div class="testi-card-quote">-->
+                                    <!--            <img src="assets/img/icon/testi-quote.svg" alt="img">-->
+                                    <!--        </div>-->
+                                    <!--    </div>-->
+                                    <!--</div>-->
+
+                                </div>
+                                <div class="slider-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shape-mockup d-none d-xl-block" data-bottom="-2%" data-right="0%">
+                        <img src="assets/img/shape/line2.png" alt="shape">
+                    </div>
+                    <div class="shape-mockup movingX d-none d-xl-block" data-top="30%" data-left="5%">
+                        <img src="assets/img/shape/shape_7.png" alt="shape">
+                    </div>
+                </section><!--==============================
+Brand Area  
+==============================-->
+
+                <br><br>
+                <div class="title-area text-center">
+                    <span class="sub-title">Medmelo Empire: A Portfolio of 50+ Iconic Brands</span>
+                    <h2 class="sec-title">We’re not just a Company — we are a Vision, a Revolution</h2>
+                </div>
+
+                <br><br>
+
+                <div class="brand-area overflow-hidden space-bottom">
+                    <div class="container th-container">
+                        <div class="swiper th-slider brandSlider1" id="brandSlider1"
+                            data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"2"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"6"},"1400":{"slidesPerView":"8"}}}'>
+
+                            <br><br>
+
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <div class="brand-box">
+                                        <a href="https://medmeloenergy.com">
+                                            <img class="original" src="assets/img/logos/logo_energy.png"
+                                                alt="Brand Logo">
+                                            <img class="gray" src="assets/img/logos/logo_energy.png" alt="Brand Logo">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brand-box">
+                                        <a href="https://medmeloinvestments.com">
+                                            <!--<img class="original" src="assets/img/brand/brand_1_2.svg" alt="Brand Logo">-->
+                                            <!--<img class="gray" src="assets/img/brand/brand_1_2.svg" alt="Brand Logo">-->
+                                            <img class="original" src="assets/img/logos/medmelo_inv.png"
+                                                alt="Brand Logo">
+                                            <img class="gray" src="assets/img/logos/medmelo_inv.png" alt="Brand Logo">
+
+
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="brand-box">
+                                        <a href="https://medmelohope.com">
+                                            <img class="original" src="assets/img/logos/medmelo_hope.png"
+                                                alt="Brand Logo">
+                                            <img class="gray" src="assets/img/logos/medmelo_hope.png" alt="Brand Logo">
+
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="brand-box">
+                                        <a href="https://medmelopharmacy.com">
+                                            <img class="original" src="assets/img/logos/medmelo_phar.png"
+                                                alt="Brand Logo">
+                                            <img class="gray" src="assets/img/logos/medmelo_phar.png" alt="Brand Logo">
+
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="brand-box">
+                                        <a href="https://medmeloplacements.com">
+                                            <img class="original" src="assets/img/logos/placements.png"
+                                                alt="Brand Logo">
+                                            <img class="gray" src="assets/img/logos/placements.png" alt="Brand Logo">
+
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="brand-box">
+                                        <a href="https://medmelo.com/ambulance.html">
+                                            <img class="original" src="assets/img/logos/ambulance.png" alt="Brand Logo">
+                                            <img class="gray" src="assets/img/logos/ambulance.png" alt="Brand Logo">
+
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brand-box">
+                                        <a href="https://auraofaurex.com">
+                                            <img class="original" src="assets/img/logos/aura.png" alt="Brand Logo">
+                                            <img class="gray" src="assets/img/logos/aura.png" alt="Brand Logo">
+
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="brand-box">
+                                        <a href="https://medmelo.com">
+                                            <img class="original" src="assets/img/logos/medmelo.png" alt="Brand Logo">
+                                            <img class="gray" src="assets/img/logos/medmelo.png" alt="Brand Logo">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="brand-box">
+                                        <a href="https://meloai.com">
+                                            <img class="original" src="assets/img/logos/meloai.png" alt="Brand Logo">
+                                            <img class="gray" src="assets/img/logos/meloai.png" alt="Brand Logo">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brand-box">
+                                        <a href="https://alfaquino.com">
+                                            <img class="original" src="assets/img/logos/alfa.png" alt="Brand Logo">
+                                            <img class="gray" src="assets/img/logos/alfa.png" alt="Brand Logo">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="brand-box">
+                                        <a href="https://superchantha.com">
+                                            <img class="original" src="assets/img/logos/chantha.png" alt="Brand Logo">
+                                            <img class="gray" src="assets/img/logos/chantha.png" alt="Brand Logo">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="brand-box">
+                                        <a href="https://medmelo.com/coaching.html">
+                                            <img class="original" src="assets/img/logos/coaching.png" alt="Brand Logo">
+                                            <img class="gray" src="assets/img/logos/coaching.png" alt="Brand Logo">
+
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brand-box">
+                                        <a href="https://thecurrychapter.com">
+                                            <img class="original" src="assets/img/logos/curry.png" alt="Brand Logo">
+                                            <img class="gray" src="assets/img/logos/curry.png" alt="Brand Logo">
+
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brand-box">
+                                        <a href="https://detoxdays.in">
+                                            <img class="original" src="assets/img/logos/detox.png" alt="Brand Logo">
+                                            <img class="gray" src="assets/img/logos/detox.png" alt="Brand Logo">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brand-box">
+                                        <a href="https://findmyatma.com">
+                                            <img class="original" src="assets/img/logos/find.png" alt="Brand Logo">
+                                            <img class="gray" src="assets/img/logos/find.png" alt="Brand Logo">
+
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="brand-box">
+                                        <a href="https://grandlinebuilders.com">
+                                            <img class="original" src="assets/img/logos/grandline.png" alt="Brand Logo">
+                                            <img class="gray" src="assets/img/logos/grandline.png" alt="Brand Logo">
+
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brand-box">
+                                        <a href="https://medmelolabs.com">
+                                            <img class="original" src="assets/img/logos/labs.png" alt="Brand Logo">
+                                            <img class="gray" src="assets/img/logos/labs.png" alt="Brand Logo">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brand-box">
+                                        <a href="https://medmelolearning.com/index.html">
+                                            <img class="original" src="assets/img/logos/logo_learn.png"
+                                                alt="Brand Logo">
+                                            <img class="gray" src="assets/img/logos/logo_learn.png" alt="Brand Logo">
+
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!--                      <div class="swiper-slide">-->
+                                <!--    <div class="brand-box">-->
+                                <!--        <a href="">-->
+                                <!--         <img class="original" src="assets/img/logos/meloai.png" alt="Brand Logo">-->
+                                <!--                                                                    <img class="gray" src="assets/img/logos/meloai.png" alt="Brand Logo">-->
+
+                                <!--        </a>-->
+                                <!--    </div>-->
+                                <!--</div>-->
+                                <div class="swiper-slide">
+                                    <div class="brand-box">
+                                        <a href="https://raftelprojects.com">
+                                            <img class="original" src="assets/img/logos/raftel.png" alt="Brand Logo">
+                                            <img class="gray" src="assets/img/logos/raftel.png" alt="Brand Logo">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brand-box">
+                                        <a href="https://medmeloinvestments.com">
+                                            <img class="original" src="assets/img/logos/studio.png" alt="Brand Logo">
+                                            <img class="gray" src="assets/img/logos/studio.png" alt="Brand Logo">
+
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="brand-box">
+                                        <a href="https://picklio.in">
+                                            <img class="original" src="assets/img/logos/picklo.png" alt="Brand Logo">
+                                            <img class="gray" src="assets/img/logos/picklo.png" alt="Brand Logo">
+
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="brand-box">
+                                        <a href="https://medmelonexus.com">
+                                            <img class="original" src="assets/img/logos/nexus.png" alt="Brand Logo">
+                                            <img class="gray" src="assets/img/logos/nexus.png" alt="Brand Logo">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="brand-box">
+                                        <a href="https://medmelohealthcare.com">
+                                            <img class="original" src="assets/img/logos/hospital.png" alt="Brand Logo">
+                                            <img class="gray" src="assets/img/logos/hospital.png" alt="Brand Logo">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="brand-box">
+                                        <a href="https://auraofaurex.com">
+                                            <img class="original" src="assets/img/logos/26.png" alt="Brand Logo">
+                                            <img class="gray" src="assets/img/logos/26.png" alt="Brand Logo">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="brand-box">
+                                        <a href="https://auraofaurex.com">
+                                            <img class="original" src="assets/img/logos/27.png" alt="Brand Logo">
+                                            <img class="gray" src="assets/img/logos/27.png" alt="Brand Logo">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brand-box">
+                                        <a href="https://auraofaurex.com">
+                                            <img class="original" src="assets/img/logos/28.png" alt="Brand Logo">
+                                            <img class="gray" src="assets/img/logos/28.png" alt="Brand Logo">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="brand-box">
+                                        <a href="https://auraofaurex.com">
+                                            <img class="original" src="assets/img/logos/29.png" alt="Brand Logo">
+                                            <img class="gray" src="assets/img/logos/29.png" alt="Brand Logo">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brand-box">
+                                        <a href="https://auraofaurex.com">
+                                            <img class="original" src="assets/img/logos/30.png" alt="Brand Logo">
+                                            <img class="gray" src="assets/img/logos/30.png" alt="Brand Logo">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brand-box">
+                                        <a href="https://auraofaurex.com">
+                                            <img class="original" src="assets/img/logos/31.png" alt="Brand Logo">
+                                            <img class="gray" src="assets/img/logos/31.png" alt="Brand Logo">
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div><!--==============================
+destination Area  
+==============================-->
+                <div class="destination-area6 position-relative space" id="destination-sec">
+                    <div class="container">
+                        <div class="title-area text-center">
+                            <span class="sub-title">15+ Branches Across India</span>
+                            <h2 class="sec-title">Our Main Branches</h2>
+                        </div>
+                        <div class="row">
+                            <div class="destination-list-area">
+                                <div class="destination-list-wrap style2 active">
+                                    <div class="destination-list"
+                                        data-bg-src="assets/img/destination/destination_5_1.jpg">
+                                        <div class="destination-content">
+                                            <h4 class="box-title">
+                                                <a>Kerala</a>
+                                            </h4>
+                                            <span class="destination-subtitle">Attingal, Trivandrum</span>
+                                        </div>
+                                        <!--<a href="contact.html" class="th-btn style2">Book Now</a>-->
+                                    </div>
+                                </div>
+                                <div class="destination-list-wrap style2">
+                                    <div class="destination-list"
+                                        data-bg-src="assets/img/destination/destination_5_2.jpg">
+                                        <div class="destination-content">
+                                            <h4 class="box-title">
+                                                <a>Karnataka</a>
+                                            </h4>
+                                            <span class="destination-subtitle">Attibele, Banglore</span>
+                                        </div>
+                                        <!--<a href="contact.html" class="th-btn style2">Book Now</a>-->
+                                    </div>
+                                </div>
+                                <div class="destination-list-wrap style2">
+                                    <div class="destination-list"
+                                        data-bg-src="assets/img/destination/destination_5_3.jpg">
+                                        <div class="destination-content">
+                                            <h4 class="box-title">
+                                                <a>TamilNadu</a>
+                                            </h4>
+                                            <span class="destination-subtitle">Madurai, Chennai</span>
+                                        </div>
+                                        <!--<a href="contact.html" class="th-btn style2">Book Now</a>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <a href="https://wa.me/message/45TJKJAJTE7KN1" class="whatsapp-button pulse-animation"
+                            target="_blank">
+                            <svg class="whatsapp-icon" viewBox="0 0 24 24">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.893 3.106" />
+                            </svg>
+                            Book a Visit Now on WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!--==============================
+feature Area  
+==============================-->
+
+                <!--==============================
+Faq Area
+==============================-->
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-7">
+                            <div class="title-area text-center">
+                                <span class="sub-title">FAQ</span>
+                                <h2 class="sec-title">frequently Ask Questions</h2>
+                                <!--<p>Have questions you want answers to?</p>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-10 offset-lg-1">
+                            <div class="accordion-area accordion mb-30" id="faqAccordion">
+
+
+                                <div class="accordion-card style2 active">
+                                    <div class="accordion-header" id="collapse-item-1">
+                                        <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse-1" aria-expanded="true"
+                                            aria-controls="collapse-1">Q1. Is MBBS abroad safe for girls?</button>
+                                    </div>
+                                    <div id="collapse-1" class="accordion-collapse collapse show"
+                                        aria-labelledby="collapse-item-1" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body style2">
+                                            <p class="faq-text"> Absolutely.
+                                                Countries like Georgia, Russia, and Uzbekistan have strict safety
+                                                protocols and separate hostels for boys and girls. Our partnered
+                                                universities are in safe, central locations with Indian warden support
+                                                and CCTV-monitored campuses</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="accordion-card style2 ">
+                                    <div class="accordion-header" id="collapse-item-2">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false"
+                                            aria-controls="collapse-2">Q2. Will I be eligible for NEXT (National Exit
+                                            Test) after studying abroad?</button>
+                                    </div>
+                                    <div id="collapse-2" class="accordion-collapse collapse "
+                                        aria-labelledby="collapse-item-2" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body style2">
+                                            <p class="faq-text">Yes.
+                                                As per NMC guidelines, foreign medical graduates can appear for NEXT
+                                                (India’s licensing exam), provided they study at NMC-approved
+                                                universities. Medmelo only places students in recognized and approved
+                                                institutions</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="accordion-card style2 ">
+                                    <div class="accordion-header" id="collapse-item-3">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false"
+                                            aria-controls="collapse-3">Q3. How much does it cost to study MBBS abroad?
+                                        </button>
+                                    </div>
+                                    <div id="collapse-3" class="accordion-collapse collapse "
+                                        aria-labelledby="collapse-item-3" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body style2">
+                                            <p class="faq-text">On average ₹20–25 lakhs total, depending on the country:
+                                                • Russia: ₹25–35 lakhs
+                                                • Georgia: ₹35–45 lakhs
+                                                • Uzbekistan/Kyrgyzstan: ₹20–30 lakhs
+                                                We provide detailed fee structures for each country and university
+                                                during counselling.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="accordion-card style2 ">
+                                    <div class="accordion-header" id="collapse-item-4">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false"
+                                            aria-controls="collapse-4">Q4. Is Medmelo charging any additional fees apart
+                                            from university fees?
+                                        </button>
+                                    </div>
+                                    <div id="collapse-4" class="accordion-collapse collapse "
+                                        aria-labelledby="collapse-item-4" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body style2">
+                                            <p class="faq-text">No hidden charges. 100% transparency.
+                                                At Medmelo, we believe in fair guidance and honest pricing.
+                                                • We do not charge any extra or hidden fees beyond what is clearly
+                                                discussed during counselling.
+                                                • You’ll only pay the official university fees (tuition + hostel) and
+                                                standard service charges (if opted), which are clearly itemized in your
+                                                admission package.
+                                                • Everything is documented with receipts, agreements, and proper
+                                                billing.
+
+                                                We aim to make quality medical education affordable and stress-free for
+                                                every student</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="accordion-card style2 ">
+                                    <div class="accordion-header" id="collapse-item-5">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse-5" aria-expanded="false"
+                                            aria-controls="collapse-5">Q5. ⁠Does Medmelo help with PG (Postgraduate)
+                                            after MBBS?
+                                        </button>
+                                    </div>
+                                    <div id="collapse-5" class="accordion-collapse collapse "
+                                        aria-labelledby="collapse-item-5" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body style2">
+                                            <p class="faq-text">es, we guide you for PG starting from your 4th year
+                                                itself.
+                                                At Medmelo, we don’t just help you get into MBBS — we prepare you for
+                                                what comes next.
+                                                From your 4th year onward, we provide personalized guidance for PG
+                                                entrance exams and licensing tests based on your preferred country,
+                                                including:
+                                                • 🇮🇳 NEXT (India)
+                                                • 🇬🇧 PLAB (UK)
+                                                • 🇺🇸 USMLE (USA)
+                                                • 🇦🇺 AMC (Australia)
+                                                • 🇩🇪 Facharzt (Germany)
+
+                                                You’ll receive mentorship, access to resources, and coaching pathways so
+                                                you can plan your dream specialization with confidence</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="accordion-card style2 ">
+                                    <div class="accordion-header" id="collapse-item-6">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse-6" aria-expanded="false"
+                                            aria-controls="collapse-6">Q6. Are there any extracurricular activities in
+                                            the universities?
+                                        </button>
+                                    </div>
+                                    <div id="collapse-6" class="accordion-collapse collapse "
+                                        aria-labelledby="collapse-item-6" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body style2">
+                                            <p class="faq-text">Yes, plenty of opportunities beyond academics!
+                                                Our partnered universities abroad offer a vibrant student life filled
+                                                with extracurricular activities such as:
+                                                • 🏀 Sports (Football, Basketball, Badminton, etc.)
+                                                • 🎭 Cultural festivals and talent shows
+                                                • 🎤 Music, dance, and drama clubs
+                                                • 🩺 Medical conferences, debates, and quiz competitions
+                                                • 🌏 International student events and travel programs
+                                                • 🤝 Indian student associations and community support groups
+
+                                                We believe in holistic development, where students not only study
+                                                medicine but also grow as confident, well-rounded individuals.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="accordion-card style2 ">
+                                    <div class="accordion-header" id="collapse-item-7">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse-7" aria-expanded="false"
+                                            aria-controls="collapse-7">Q7. Is Indian mess available for students abroad?
+                                        </button>
+                                    </div>
+                                    <div id="collapse-7" class="accordion-collapse collapse "
+                                        aria-labelledby="collapse-item-7" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body style2">
+                                            <p class="faq-text">Yes, Indian mess facilities are available in almost all
+                                                universities we work with.
+                                                We understand the importance of homely food while studying abroad.
+                                                That’s why most of our partner universities offer:
+                                                • 🍛 Indian mess or catering services (veg & non-veg options)
+                                                • 👨‍🍳 Experienced Indian chefs preparing South & North Indian meals.
+                                                For students who prefer cooking, shared kitchen facilities are also
+                                                available in hostels.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="accordion-card style2 ">
+                                    <div class="accordion-header" id="collapse-item-8">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse-8" aria-expanded="false"
+                                            aria-controls="collapse-8">Q8. How is the Medmelo Learning App helpful for
+                                            students?
+                                        </button>
+                                    </div>
+                                    <div id="collapse-8" class="accordion-collapse collapse "
+                                        aria-labelledby="collapse-item-8" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body style2">
+                                            <p class="faq-text">The Medmelo Learning App is your personal medical mentor
+                                                – anytime, anywhere.
+                                                Built by doctors and medical educators, the app is designed to support
+                                                students from 1st year to final year and even PG preparation. Key
+                                                features include:
+                                                • 🧠 25,000+ QBank MCQs with detailed explanations
+                                                • 📖 Notes, flashcards & one-liners for revision
+                                                • 🤖 Melo AI – your 24/7 AI-powered study assistant
+                                                • 🧪 Case studies & clinical scenarios
+                                                • 📊 Progress tracking & test analysis</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="accordion-card style2 ">
+                                    <div class="accordion-header" id="collapse-item-9">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse-9" aria-expanded="false"
+                                            aria-controls="collapse-9">Q9. How many intakes are there for MBBS abroad?
+                                        </button>
+                                    </div>
+                                    <div id="collapse-9" class="accordion-collapse collapse "
+                                        aria-labelledby="collapse-item-9" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body style2">
+                                            <p class="faq-text">Most universities have two intakes: September and
+                                                January.
+                                                • 🎓 Primary Intake: September – This is the main and most preferred
+                                                intake with the highest number of seats and options available.
+                                                • 🎓 Secondary Intake: January/February – Some universities in Russia,
+                                                Georgia, Uzbekistan, and Kyrgyzstan offer this as an additional option
+                                                with limited seats.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="accordion-card style2 ">
+                                    <div class="accordion-header" id="collapse-item-10">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse-10"
+                                            aria-expanded="false" aria-controls="collapse-10">Q10. Does Medmelo help
+                                            students with research, scientific conferences, or clinical electives?
+                                        </button>
+                                    </div>
+                                    <div id="collapse-10" class="accordion-collapse collapse "
+                                        aria-labelledby="collapse-item-10" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body style2">
+                                            <p class="faq-text"> Yes, Medmelo actively supports students in building
+                                                strong academic and clinical profiles.
+                                                We guide and assist students in:
+                                                • 🧪 Research Projects – from topic selection to publication
+                                                • 🧬 Scientific Conferences – participation, abstract submission &
+                                                presentation
+                                                • 🏥 Clinical Electives & Observerships – in top hospitals across India,
+                                                UK, UAE, and other countries
+
+                                                We believe a strong academic and clinical portfolio is key to standing
+                                                out in PG applications, scholarships, and global opportunities. Medmelo
+                                                mentors are always ready to help you explore and grow beyond textbooks.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--==============================
+elements Area  
+==============================-->
+
+
+                <footer class="footer-wrapper footer-layout1">
+                    <div class="widget-area">
+                        <div class="container">
+                            <div class="newsletter-area">
+                                <div class="newsletter-top">
+                                    <!--<div class="row gy-4 align-items-center">-->
+                                    <!--    <div class="col-lg-5">-->
+                                    <!--        <h2 class="newsletter-title text-capitalize mb-0">get updated the latest newsletter</h2>-->
+                                    <!--    </div>-->
+                                    <!--    <div class="col-lg-7">-->
+                                    <!--        <form class="newsletter-form">-->
+                                    <!--            <input class="form-control " type="email" placeholder="Enter Email" required="">-->
+                                    <!--            <button type="submit" class="th-btn style3">Subscribe Now <img src="assets/img/icon/plane.svg" alt=""></button>-->
+                                    <!--        </form>-->
+                                    <!--    </div>-->
+                                    <!--</div>-->
+                                </div>
+                            </div>
+                            <div class="row justify-content-between">
+                                <!--<div class="col-md-6 col-xl-3">-->
+                                <!--    <div class="widget footer-widget">-->
+                                <!--        <div class="th-widget-about">-->
+                                <!--            <div class="about-logo">-->
+                                <!--                <a href="home-travel.html"><img src="assets/img/logo3.svg" alt="Tourm"></a>-->
+                                <!--            </div>-->
+                                <!--            <p class="about-text">Rapidiously myocardinate cross-platform intellectual capital model. Appropriately create interactive infrastructures</p>-->
+                                <!--            <div class="th-social">-->
+                                <!--                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>-->
+                                <!--                <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>-->
+                                <!--                <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>-->
+                                <!--                <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>-->
+                                <!--                <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>-->
+                                <!--            </div>-->
+                                <!--        </div>-->
+                                <!--    </div>-->
+                                <!--</div>-->
+                                <div class="col-md-6 col-xl-auto">
+                                    <!--<div class="widget widget_nav_menu footer-widget">-->
+                                    <!--    <h3 class="widget_title">Quick Links</h3>-->
+                                    <!--    <div class="menu-all-pages-container">-->
+                                    <!--        <ul class="menu">-->
+
+                                    <!--            <li><a href="index.html">Home</a></li>-->
+                                    <!--            <li><a href="about.html">About us</a></li>-->
+                                    <!--            <li><a href="service.html">Our Service</a></li>-->
+                                    <!--            <li><a href="contact.html">Terms of Service</a></li>-->
+                                    <!--            <li><a href="contact.html">Tour Booking Now</a></li>-->
+                                    <!--        </ul>-->
+                                    <!--    </div>-->
+                                    <!--</div>-->
+                                </div>
+                                <div class="col-md-6 col-xl-auto">
+                                    <div class="widget footer-widget">
+                                        <h3 class="widget_title">Kerala</h3>
+                                        <div class="th-widget-contact">
+                                            <div class="info-box_text">
+                                                <div class="icon">
+                                                    <img src="assets/img/icon/phone.svg" alt="img">
+                                                </div>
+                                                <div class="details">
+                                                    <p><a href="tel:1800-599-0909" class="info-box_link">1800-599-0909
+                                                            (Toll Free)</a></p>
+                                                    <p><a href="tel:1860-599-0909" class="info-box_link">1860-599-0909
+                                                            (Helpline)</a></p>
+                                                    <p><a href="https://wa.me/+919037020606"
+                                                            class="info-box_link">+919037020606 (24x7 Whatsapp)</a></p>
+                                                </div>
+                                            </div>
+                                            <div class="info-box_text">
+                                                <div class="icon">
+                                                    <img src="assets/img/icon/envelope.svg" alt="img">
+                                                </div>
+                                                <div class="details">
+                                                    <p><a href="mailto:care@medmelo.com"
+                                                            class="info-box_link">care@medmelo.com</a></p>
+                                                    <p><a href="mailto:admissions@medmelostudyabroad.com"
+                                                            class="info-box_link">admissions@medmelostudyabroad.com</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="info-box_text">
+                                                <div class="icon"><img src="assets/img/icon/location-dot.svg" alt="img">
+                                                </div>
+                                                <div class="details">
+                                                    <p>Medmelo Empire Kerala Head Quarters,Opposite Kalyan
+                                                        Silks,Attingal,Trivandrum,Kerala 695101</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xl-auto">
+                                    <div class="widget footer-widget">
+                                        <h3 class="widget_title">Karnataka</h3>
+                                        <div class="th-widget-contact">
+                                            <div class="info-box_text">
+                                                <div class="icon">
+                                                    <img src="assets/img/icon/phone.svg" alt="img">
+                                                </div>
+                                                <div class="details">
+                                                    <p><a href="tel:1800-599-0909" class="info-box_link">1800-599-0909
+                                                            (Toll Free)</a></p>
+                                                    <p><a href="tel:1860-599-0909" class="info-box_link">1860-599-0909
+                                                            (Helpline)</a></p>
+                                                    <p><a href="https://wa.me/+919037020606"
+                                                            class="info-box_link">+919037020606 (24x7 Whatsapp)</a></p>
+                                                </div>
+                                            </div>
+                                            <div class="info-box_text">
+                                                <div class="icon">
+                                                    <img src="assets/img/icon/envelope.svg" alt="img">
+                                                </div>
+                                                <div class="details">
+                                                    <p><a href="mailto:care@medmelo.com"
+                                                            class="info-box_link">care@medmelo.com</a></p>
+                                                    <p><a href="mailto:admissions@medmelostudyabroad.com"
+                                                            class="info-box_link">admissions@medmelostudyabroad.com</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="info-box_text">
+                                                <div class="icon"><img src="assets/img/icon/location-dot.svg" alt="img">
+                                                </div>
+                                                <div class="details">
+                                                    <p>Medmelo Empire Karnataka Headquarters
+                                                        Janatha Colony, Bommasandra, Attibele Hobli, Anekal Taluk,
+                                                        Bangalore
+                                                        560 099</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xl-auto">
+                                    <div class="widget footer-widget">
+                                        <h3 class="widget_title">TamilNadu</h3>
+                                        <div class="th-widget-contact">
+                                            <div class="info-box_text">
+                                                <div class="icon">
+                                                    <img src="assets/img/icon/phone.svg" alt="img">
+                                                </div>
+                                                <div class="details">
+                                                    <p><a href="tel:1800-599-0909" class="info-box_link">1800-599-0909
+                                                            (Toll Free)</a></p>
+                                                    <p><a href="tel:1860-599-0909" class="info-box_link">1860-599-0909
+                                                            (Helpline)</a></p>
+                                                    <p><a href="https://wa.me/+919037020606"
+                                                            class="info-box_link">+919037020606 (24x7 Whatsapp)</a></p>
+
+                                                </div>
+                                            </div>
+                                            <div class="info-box_text">
+                                                <div class="icon">
+                                                    <img src="assets/img/icon/envelope.svg" alt="img">
+                                                </div>
+                                                <div class="details">
+                                                    <p><a href="mailto:care@medmelo.com"
+                                                            class="info-box_link">care@medmelo.com</a></p>
+                                                    <p><a href="mailto:admissions@medmelostudyabroad.com"
+                                                            class="info-box_link">admissions@medmelostudyabroad.com</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="info-box_text">
+                                                <div class="icon"><img src="assets/img/icon/location-dot.svg" alt="img">
+                                                </div>
+                                                <div class="details">
+                                                    <p>Medmelo Empire Regional Office
+                                                        Dr.Jagan Kitchely Complex, 19, Subramaniyapuram 2nd Main Road,
+                                                        Tamilnadu Polytechnic College Backside, MADURAI - 625 011</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--<div class="col-md-6 col-xl-auto">-->
+                                <!--    <div class="widget footer-widget">-->
+                                <!--        <h3 class="widget_title">Instagram Post</h3>-->
+                                <!--        <div class="sidebar-gallery">-->
+                                <!--            <div class="gallery-thumb">-->
+                                <!--                <img src="assets/img/widget/gallery_1_1.jpg" alt="Gallery Image">-->
+                                <!--                <a target="_blank" href="https://www.instagram.com/" class="gallery-btn"><i class="fab fa-instagram"></i></a>-->
+                                <!--            </div>-->
+                                <!--            <div class="gallery-thumb">-->
+                                <!--                <img src="assets/img/widget/gallery_1_2.jpg" alt="Gallery Image">-->
+                                <!--                <a target="_blank" href="https://www.instagram.com/" class="gallery-btn"><i class="fab fa-instagram"></i></a>-->
+                                <!--            </div>-->
+                                <!--            <div class="gallery-thumb">-->
+                                <!--                <img src="assets/img/widget/gallery_1_3.jpg" alt="Gallery Image">-->
+                                <!--                <a target="_blank" href="https://www.instagram.com/" class="gallery-btn"><i class="fab fa-instagram"></i></a>-->
+                                <!--            </div>-->
+                                <!--            <div class="gallery-thumb">-->
+                                <!--                <img src="assets/img/widget/gallery_1_4.jpg" alt="Gallery Image">-->
+                                <!--                <a target="_blank" href="https://www.instagram.com/" class="gallery-btn"><i class="fab fa-instagram"></i></a>-->
+                                <!--            </div>-->
+                                <!--            <div class="gallery-thumb">-->
+                                <!--                <img src="assets/img/widget/gallery_1_5.jpg" alt="Gallery Image">-->
+                                <!--                <a target="_blank" href="https://www.instagram.com/" class="gallery-btn"><i class="fab fa-instagram"></i></a>-->
+                                <!--            </div>-->
+                                <!--            <div class="gallery-thumb">-->
+                                <!--                <img src="assets/img/widget/gallery_1_6.jpg" alt="Gallery Image">-->
+                                <!--                <a target="_blank" href="https://www.instagram.com/" class="gallery-btn"><i class="fab fa-instagram"></i></a>-->
+                                <!--            </div>-->
+                                <!--        </div>-->
+                                <!--    </div>-->
+                                <!--</div>-->
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="copyright-wrap" >-->
+                    <!--    <div class="container">-->
+                    <!--        <div class="row justify-content-between align-items-center">-->
+                    <!--            <div class="col-md-6">-->
+                    <!--                <p class="copyright-text">Copyright 2025 <a href="index.html">Medmelo</a>. All Rights Reserved.</p>-->
+                    <!--            </div>-->
+                    <!--<div class="col-md-6 text-end d-none d-md-block">-->
+                    <!--    <div class="footer-card">-->
+                    <!--        <span class="title">We Accept</span>-->
+                    <!--        <img src="assets/img/shape/cards.png" alt="">-->
+                    <!--    </div>-->
+                    <!--</div>-->
+                    <!--        </div>-->
+
+                    <!--    </div>-->
+                    <!--</div>-->
+
+                </footer>
+
+                <!--********************************
+            Code End  Here 
+    ******************************** -->
+
+                <!-- Scroll To Top -->
+                <div class="scroll-top">
+                    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+                            style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;">
+                        </path>
+                    </svg>
+                </div>
+                <!--==============================
+modal Area  
+==============================-->
+                <div id="login-form" class="popup-login-register mfp-hide">
+                    <ul class="nav" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-menu" id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="false">Login</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-menu active" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="true">Register</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <h3 class="box-title mb-30">Sign in to your account</h3>
+                            <div class="th-login-form">
+                                <form action="mail.php" method="POST" class="login-form ajax-contact">
+                                    <div class="row">
+                                        <div class="form-group col-12">
+                                            <label>Username or email</label>
+                                            <input type="text" class="form-control" name="email" id="email"
+                                                required="required">
+                                        </div>
+                                        <div class="form-group col-12">
+                                            <label>Password</label>
+                                            <input type="password" class="form-control" name="pasword" id="pasword"
+                                                required="required">
+                                        </div>
+
+                                        <div class="form-btn mb-20 col-12">
+                                            <button class="th-btn btn-fw th-radius2 ">Send Message</button>
+                                        </div>
+                                    </div>
+                                    <div id="forgot_url">
+                                        <a href="my-account.html">Forgot password?</a>
+                                    </div>
+                                    <p class="form-messages mb-0 mt-3"></p>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade active show" id="pills-profile" role="tabpanel"
+                            aria-labelledby="pills-profile-tab">
+                            <h3 class="th-form-title mb-30">Sign in to your account</h3>
+                            <form action="mail.php" method="POST" class="login-form ajax-contact">
+                                <div class="row">
+                                    <div class="form-group col-12">
+                                        <label>Username*</label>
+                                        <input type="text" class="form-control" name="usename" id="usename"
+                                            required="required">
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <label>First name*</label>
+                                        <input type="text" class="form-control" name="firstname" id="firstname"
+                                            required="required">
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <label>Last name*</label>
+                                        <input type="text" class="form-control" name="lastname" id="lastname"
+                                            required="required">
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <label for="new_email">Your email*</label>
+                                        <input type="text" class="form-control" name="new_email" id="new_email"
+                                            required="required">
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <label for="new_email_confirm">Confirm email*</label>
+                                        <input type="text" class="form-control" name="new_email_confirm"
+                                            id="new_email_confirm" required="required">
+                                    </div>
+                                    <div class="statement">
+                                        <span class="register-notes">A password will be emailed to you.</span>
+                                    </div>
+
+                                    <div class="form-btn mt-20 col-12">
+                                        <button class="th-btn btn-fw th-radius2 ">Sign up</button>
+                                    </div>
+                                </div>
+                                <p class="form-messages mb-0 mt-3"></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!--==============================
+    All Js File
+============================== -->
+                <!-- Jquery -->
+                <!-- Jquery -->
+                <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+                <!-- Swiper Js -->
+                <script src="assets/js/swiper-bundle.min.js"></script>
+                <!-- Bootstrap -->
+                <script src="assets/js/bootstrap.min.js"></script>
+                <!-- Magnific Popup -->
+                <script src="assets/js/jquery.magnific-popup.min.js"></script>
+                <!-- Counter Up -->
+                <script src="assets/js/jquery.counterup.min.js"></script>
+                <!-- Range Slider -->
+                <script src="assets/js/jquery-ui.min.js"></script>
+                <!-- imagesloaded -->
+                <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+                <!-- isotope -->
+                <script src="assets/js/isotope.pkgd.min.js"></script>
+                <!-- gsap -->
+                <script src="assets/js/gsap.min.js"></script>
+
+                <!-- circle-progress -->
+                <script src="assets/js/circle-progress.js"></script>
+
+                <script src="assets/js/matter.min.js"></script>
+                <script src="assets/js/matterjs-custom.js"></script>
+
+
+                <!-- nice select -->
+                <script src="assets/js/nice-select.min.js"></script>
+
+                <!-- Main Js File -->
+                <script src="assets/js/main.js"></script>
+</body>
+
+</html>
